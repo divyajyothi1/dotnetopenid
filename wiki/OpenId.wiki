@@ -1,0 +1,19 @@
+#summary A distributed identity system
+
+= Details =
+
+As stated on the OpenId site (http://openid.net/):
+
+_OpenID is an open, decentralized, free framework for user-centric digital identity.
+
+OpenID starts with the concept that anyone can identify themselves on the Internet the same way websites do-with a URI (also called a URL or web address). Since URIs are at the very core of Web architecture, they provide a solid foundation for user-centric identity.
+
+The first piece of the OpenID framework is authentication -- how you prove ownership of a URI. Today, websites require usernames and passwords to login, which means that many people use the same password everywhere. With OpenID Authentication (see specs), your username is your URI, and your password (or other credentials) stays safely stored on your OpenID Provider (which you can run yourself, or use a third-party identity provider).
+
+To login to an OpenID-enabled website (even one you've never been to before), just type your OpenID URI. The website will then redirect you to your OpenID Provider to login using whatever credentials it requires. Once authenticated, your OpenID provider will send you back to the website with the necessary credentials to log you in. By using Strong Authentication where needed, the OpenID Framework can be used for all types of transactions, both extending the use of pure single-sign-on as well as the sensitivity of data shared.
+
+Beyond Authentication, the OpenID framework provides the means for users to share other components of their digital identity. By utilizing the emerging OpenID Attribute Exchange specification (see specs), users are able to clearly control what pieces of information can be shared by their Identity Provider, such as their name, address, or phone number.
+
+Today, OpenID has emerged as the de-facto user-centric identity framework allowing millions of people to interact online. With programs such as the I Want My OpenID Bounty, developers of Open Source projects are rapidly adding support for OpenID in order to enable their communities._
+
+

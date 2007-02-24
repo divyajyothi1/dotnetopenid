@@ -1,0 +1,5 @@
+#summary Grant Morton's Boo Libraries for OpenId
+
+= Overview =
+
+Grant Morton has an OpenId implementation of JanRain's libraries out here: http://www.openidenabled.com/openid/libraries/csharp . Unfortunately, many of the complaints are that it's written in Boo (a language based heavily on Python). While .NET is all about using whatever language you want to, Boo unfortunately requires a separate DLL for deployment, and it's not very mainstream in the .NET world yet so that makes it somewhat difficult to justify supporting and maintaining in an existing, or new, project.

@@ -18,7 +18,8 @@ The objective of M2 is refactoring. In this milestone we want to go back and fix
 M2 is satisifed when we feel all code has been properly refactored, and that all unit tests still run successfully.
 
 
-== Milestone 3 (M3) == 
+== Milestone 3 (M3) ==
 The objective of M3 is enhancements. In this milestone the goal is to enhance and improve the foundation we've built upon. Here, we want to make sure that we've made things SUPER simple, easy to use, and that it's very robust. In this milestone we should all be very familiar with OpenID, what it's strengths and weaknesses are, and hopefully we can use this to innovate and build in new features and enhancements.
 
 M3 acceptance goals are unknown.
+

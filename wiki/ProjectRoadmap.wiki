@@ -1,0 +1,22 @@
+#summary The DotNetOpenID project road map.
+
+= DotNetOpenID Project Road map=
+
+The following is a rough cut at the DotNetOpenID road map, as of 2/28/2007. Usual disclaimers apply. YMMV.
+
+
+== M1 ==
+The objective of M1 is all about getting everything ported over to C#, as-is, and working. Basically, we'll be back to square one, but that's the goal. For M1, when porting, even if we see something that can be improved or bettered, we still do a straight one-for-one porting of the Boo code to C#. Additionally, in this milestone we look to have Andrew's 
+ASP.NET controls updated to use our libraries, with no refactoring or changes, yet.
+
+M1 is satisfied when all code is ported, and all unit tests run successfully.
+
+== M2 ==
+The objective of M2 is refactoring. In this milestone we want to go back and fix any issues or logic that you noticed in M1 that can be improved. Also in this milestone we will do heavier refactoring to insure that DotNetOpenId uses more .NET-centric features, such as generics, anonymous delegates and so on. Included in this milestone we will also want to take a second look at the ASP.NET controls and refactor there, as well.
+
+M2 is satisifed when we feel all code has been properly refactored, and that all unit tests still run successfully.
+
+== M3 == 
+The objective of M3 is enhancements. In this milestone the goal is to enhance and improve the foundation we've built upon. Here, we want to make sure that we've made things SUPER simple, easy to use, and that it's very robust. In this milestone we should all be very familiar with OpenID, what it's strengths and weaknesses are, and hopefully we can use this to innovate and build in new features and enhancements.
+
+M3 acceptance goals are unknown.

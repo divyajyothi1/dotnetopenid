@@ -70,7 +70,6 @@ namespace NerdBank.OpenId.Consumer
 			wrappedTextBox.CssClass = cssClassDefault;
 			wrappedTextBox.Columns = columnsDefault;
 			wrappedTextBox.Text = text;
-			wrappedTextBox.TabIndex = tabIndexDefault;
 		}
 
 		protected bool ShouldBeFocused;
@@ -84,7 +83,6 @@ namespace NerdBank.OpenId.Consumer
 
 		const string appearanceCategory = "Appearance";
 		const string profileCategory = "Profile";
-		const string behaviorCategory = "Behavior";
 
 		#region Properties
 		const string textDefault = "";
@@ -122,19 +120,6 @@ namespace NerdBank.OpenId.Consumer
 			set { ViewState[showLogoViewStateKey] = value; }
 		}
 
-		const string usePersistentCookieViewStateKey = "UsePersistentCookie";
-		protected const bool usePersistentCookieDefault = false;
-		[Bindable(true)]
-		[Category(behaviorCategory)]
-		[DefaultValue(usePersistentCookieDefault)]
-		[Description("Whether to send a persistent cookie upon successful " +
-			"login so the user does not have to log in upon returning to this site.")]
-		public virtual bool UsePersistentCookie
-		{
-			get { return (bool)(ViewState[usePersistentCookieViewStateKey] ?? usePersistentCookieDefault); }
-			set { ViewState[usePersistentCookieViewStateKey] = value; }
-		}
-
 		const int columnsDefault = 40;
 		[Bindable(true)]
 		[Category(appearanceCategory)]
@@ -143,15 +128,6 @@ namespace NerdBank.OpenId.Consumer
 		{
 			get { return WrappedTextBox.Columns; }
 			set { WrappedTextBox.Columns = value; }
-		}
-
-		protected const short tabIndexDefault = 0;
-		[Bindable(true)]
-		[Category(behaviorCategory)]
-		[DefaultValue(tabIndexDefault)]
-		public override short TabIndex {
-			get { return WrappedTextBox.TabIndex; }
-			set { WrappedTextBox.TabIndex = value; }
 		}
 
 		const string requestNicknameViewStateKey = "RequestNickname";
@@ -535,7 +511,7 @@ namespace NerdBank.OpenId.Consumer
 			if (loggedIn != null)
 				loggedIn(this, args);
 			if (!args.Cancel)
-				FormsAuthentication.RedirectFromLoginPage(openIdUri.AbsoluteUri, UsePersistentCookie);
+				FormsAuthentication.RedirectFromLoginPage(openIdUri.AbsoluteUri, false);
 		}
 
 		#endregion

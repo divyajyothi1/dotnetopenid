@@ -87,7 +87,6 @@
                 </tr>
             </table>
         </div>
-        <asp:LoginStatus runat=server />
     </form>
 </body>
 </html>

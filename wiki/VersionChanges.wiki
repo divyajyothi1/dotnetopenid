@@ -1,5 +1,5 @@
 #summary Describe significant changes in each new tagged version
-#labels Phase-Deploy
+#labels Phase-Deploy,Featured
 
 = Changes between versions =
 

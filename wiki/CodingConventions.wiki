@@ -3,20 +3,25 @@
 
 Disclaimer: this page is a *work in progress*
 
-= Introduction =
+= Code ownership =
+
+Notwithstanding this is an open-source project, there is a sense of ownership in the code contributors submit via check-in or patches.  Ownership can explicitly transfer when the owner asks or authorizes someone else to take over a feature.  Ownership can implicitly transfer if a contributor has not participated by email or coding contributions in the last several months and someone else picks up ownership, usually by studying the code and fixing bugs in it.  
+Coding etiquette suggests that before you change code you didn't write, you should email the owner of the code and clear it with him or her first, perhaps with the proposed patch.
+
+= Coding Style Goals =
 
 As many developers from various OS and IDE backgrounds contribute to this project, we seek to achieve a uniform coding style for these reasons:
-  * Minimize whitespace code churn.  Diffs between versions should cleanly represent changes to code and not spurious changes due only to whitespace formatting changes made by an IDE or an errant programmer.
   * Stay productive by focusing on code content and not perpetually debating or changing coding style.
   * Easy reading and maybe fewer bugs if we're lucky.
+  * Leverage the power of .NET wherever possible to reduce code size and testing requirements.
+  * Allows for clean FxCop (code analysis) runs with an agreed upon set of rules.
+  * Minimize whitespace code churn.  Diffs between versions should cleanly represent changes to code and not spurious changes due only to whitespace formatting changes made by an IDE or an errant programmer.
 
+== Details ==
 
-= Details =
+We haven't nailed down a standard yet, as recent snaps of our source tree will show.  We have a variety of coding styles throughout the project.
 
-We haven't nailed down a standard yet, as today's source code will show.  We have a variety of whitespace rules throughout the project.
-
-Some have suggested we adopt the following for our coding standard:
-http://www.idesign.net/idesign/download/IDesign%20CSharp%20Coding%20Standard.zip
+Some have suggested we adopt [http://www.idesign.net/idesign/download/IDesign%20CSharp%20Coding%20Standard.zip IDesign's CSharp Coding Standard].  It's comprehensive and has some very good ideas.  
 
 Rather than force a single coding style on the entire project, another option to consider is  let the owner of a particular feature within the project determine the coding style.  In large projects (for example in at least some divisions at Microsoft) this is the only way to go, as you'll rarely if ever get more than a dozen smart software engineers to agree on a single standard.  In this approach, you respect the coding style present in any existing file and work to preserve it whenever you add to or modify the code.  
 

@@ -8,11 +8,14 @@ Disclaimer: this page is a *work in progress*
 Notwithstanding this is an open-source project, there is a sense of ownership in the code contributors submit via check-in or patches.  Ownership can explicitly transfer when the owner asks or authorizes someone else to take over a feature.  Ownership can implicitly transfer if a contributor has not participated by email or coding contributions in the last several months and someone else picks up ownership, usually by studying the code and fixing bugs in it.  
 Coding etiquette suggests that before you change code you didn't write, you should email the owner of the code and clear it with him or her first, perhaps with the proposed patch.
 
-= Coding Style Goals =
+= Coding Style =
+
+== Goals ==
 
 As many developers from various OS and IDE backgrounds contribute to this project, we seek to achieve a uniform coding style for these reasons:
   * Stay productive by focusing on code content and not perpetually debating or changing coding style.
   * Easy reading and maybe fewer bugs if we're lucky.
+  * Predictable conventions based on generally accepted industry practice for C# programs and libraries.
   * Leverage the power of .NET wherever possible to reduce code size and testing requirements.
   * Allows for clean FxCop (code analysis) runs with an agreed upon set of rules.
   * Minimize whitespace code churn.  Diffs between versions should cleanly represent changes to code and not spurious changes due only to whitespace formatting changes made by an IDE or an errant programmer.

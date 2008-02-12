@@ -1,13 +1,24 @@
 #summary Coding conventions that contributors to this project should follow
+#labels Phase-Implementation
+
+Disclaimer: this page is a *work in progress*
 
 = Introduction =
 
-Add your content here.
+As many developers from various OS and IDE backgrounds contribute to this project, we seek to achieve a uniform coding style for these reasons:
+  * Minimize whitespace code churn.  Diffs between versions should cleanly represent changes to code and not spurious changes due only to whitespace formatting changes made by an IDE or an errant programmer.
+  * Stay productive by focusing on code content and not perpetually debating or changing coding style.
+  * Easy reading and maybe fewer bugs if we're lucky.
 
 
 = Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+We haven't nailed down a standard yet, as today's source code will show.  We have a variety of whitespace rules throughout the project.
+
+Some have suggested we adopt the following for our coding standard:
+http://www.idesign.net/idesign/download/IDesign%20CSharp%20Coding%20Standard.zip
+
+Rather than force a single coding style on the entire project, another option to consider is  let the owner of a particular feature within the project determine the coding style.  In large projects (for example in at least some divisions at Microsoft) this is the only way to go, as you'll rarely if ever get more than a dozen smart software engineers to agree on a single standard.  In this approach, you respect the coding style present in any existing file and work to preserve it whenever you add to or modify the code.  
+
+= Comments = 
+If you have comments, feel free to post comments at the bottom of this page.

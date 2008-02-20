@@ -29,7 +29,7 @@ Curious what's changed from version to version?  Wonder if it's worth upgrading 
 
 == Version 0.2 (unreleased) ==
   * *Partial trust* scenarios now supported.  Unsafe C# code rewritten in safe code so shared-hosting ASP.NET web sites can now be OpenID providers/consumers.
-  * Session state is no longer required for consumers.
+  * Session state is no longer required for consumers.  (issue 37)
   * Fixed MemoryStore caching where ASP.NET could freely clear out nonces in the middle of an authentication causing random failures.  (issue 16)
   * Refactored to follow more .NET conventions.  
   * Most classes now belong to the new DotNetOpenId namespace.  

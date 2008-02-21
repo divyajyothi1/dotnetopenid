@@ -35,3 +35,4 @@ Curious what's changed from version to version?  Wonder if it's worth upgrading 
   * Most classes now belong to the new DotNetOpenId namespace.  
   * Most custom exception classes renamed to end with "Exception".
   * OpenIdTextBox.ShowLogo property now defaults to true.
+  * ProviderPortal sample web site's urlrewrite section moved outside of system.web.  (issue 38)

@@ -12,28 +12,29 @@ Curious what's changed from version to version?  Wonder if it's worth upgrading 
 
 == Version 0.1 ==
   * Fixed bug where only the first LINK tag in an HTML document would be parsed for openid.server information. (issue 15)
-  * Fixed OpenIdTextBox bug where old failure cases would cause all future cases to fail as well. (issue 17)
-  * OpenIdTextBox now catches some failure exceptions and fires the Error event as appropriate. (issue 19)
-  * Removed requirement for 'http://' to precede the host in the OpenIdLogin control. (issue 25)
+  * Fixed `OpenIdTextBox` bug where old failure cases would cause all future cases to fail as well. (issue 17)
+  * `OpenIdTextBox` now catches some failure exceptions and fires the Error event as appropriate. (issue 19)
+  * Removed requirement for `http://` to precede the host in the `OpenIdLogin` control. (issue 25)
 
 == Version 0.1.1 (unreleased) ==
-  * Added OpenIdTextBox.ShowLogo property to easily show OpenID logo from embedded resource. (issue 25)
-  * Added a Remember Me checkbox to the OpenIdLogin control.  (issue 32)
-  * Added OpenIdLogin.RegisterVisible property.
-  * Fixed UTC/Local DateTime inconsistent usage.  (issue 18)
-  * Fixed bug where one of CheckIdRequest's constructors would always fail due to passing Uri.AbsolutePath to TrustRoot's constructor.  (issue 35)
-  * Improved security by adding TrustRoot validation that was missing from earlier versions.
-  * Added OpenIdTextBox.TrustRootUrl property.  (issue 39)
+  * Added `OpenIdTextBox.ShowLogo` property to easily show OpenID logo from embedded resource. (issue 25)
+  * Added a Remember Me checkbox to the `OpenIdLogin` control.  (issue 32)
+  * Added `OpenIdLogin.RegisterVisible` property.
+  * Fixed UTC/Local `DateTime` inconsistent usage.  (issue 18)
+  * Fixed bug where one of `CheckIdRequest`'s constructors would always fail due to passing `Uri.AbsolutePath` to `TrustRoot`'s constructor.  (issue 35)
+  * Improved security by adding `TrustRoot` validation that was missing from earlier versions.
+  * Added `OpenIdTextBox.TrustRootUrl` property.  (issue 39)
 
 == Version 0.1.2 (unreleased) ==
+  * Session state is no longer required for consumers.  (issue 37)
   * _Planned_: *Partial trust* scenarios now supported.  Unsafe C# code rewritten in safe code so shared-hosting ASP.NET web sites can now be OpenID providers/consumers.
 
 == Version 0.2 (unreleased) ==
   * *Partial trust* scenarios now supported.  Unsafe C# code rewritten in safe code so shared-hosting ASP.NET web sites can now be OpenID providers/consumers.
   * Session state is no longer required for consumers.  (issue 37)
-  * Fixed MemoryStore caching where ASP.NET could freely clear out nonces in the middle of an authentication causing random failures.  (issue 16)
+  * Fixed `MemoryStore` caching where ASP.NET could freely clear out nonces in the middle of an authentication causing random failures.  (issue 16)
   * Refactored to follow more .NET conventions.  
-  * Most classes now belong to the new DotNetOpenId namespace.  
-  * Most custom exception classes renamed to end with "Exception".
-  * OpenIdTextBox.ShowLogo property now defaults to true.
+  * Most classes now belong to the new `DotNetOpenId` namespace.  
+  * Most custom exception classes renamed to end with `Exception`.
+  * `OpenIdTextBox.ShowLogo` property now defaults to true.
   * ProviderPortal sample web site's urlrewrite section moved outside of system.web.  (issue 38)

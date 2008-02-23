@@ -16,7 +16,7 @@ Curious what's changed from version to version?  Wonder if it's worth upgrading 
   * `OpenIdTextBox` now catches some failure exceptions and fires the Error event as appropriate. (issue 19)
   * Removed requirement for `http://` to precede the host in the `OpenIdLogin` control. (issue 25)
 
-== Version 0.1.1 (unreleased) ==
+== Version 0.1.1 ==
   * Added `OpenIdTextBox.ShowLogo` property to easily show OpenID logo from embedded resource. (issue 25)
   * Added a Remember Me checkbox to the `OpenIdLogin` control.  (issue 32)
   * Added `OpenIdLogin.RegisterVisible` property.

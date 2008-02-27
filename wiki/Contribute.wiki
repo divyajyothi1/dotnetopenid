@@ -1,4 +1,4 @@
-#summary How to contribute to the !DotNetOpenId project.
+#summary How to contribute to the DotNetOpenId project.
 
 Anyone may contribute to this project, and being an open-source effort we count on volunteers to help enhance the library.  
 

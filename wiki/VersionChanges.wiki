@@ -3,7 +3,8 @@
 
 = Changes between versions =
 
-Curious what's changed from version to version?  Wonder if it's worth upgrading or what breaking changes may exist?  This is the page for you.
+Curious what's changed from version to version?  Wonder if it's worth upgrading or what breaking changes may exist?  This is the page for you.  
+Not all fixed issues are listed here, but the more noteworthy ones are.  Unless explicitly said otherwise, each version has all the enhancements of the previously listed ones.
 
 == Version M1 ==
   * First release of a working library.  
@@ -27,10 +28,10 @@ Curious what's changed from version to version?  Wonder if it's worth upgrading 
 
 == Version 0.1.2 (unreleased) ==
   * Session state is no longer required for consumers.  (issue 37)
-  * _Planned_: *Partial trust* scenarios now supported.  Unsafe C# code rewritten in safe code so shared-hosting ASP.NET web sites can now be OpenID providers/consumers.  (issue 14)
+  * *Partial trust* scenarios now supported.  Unsafe C# code rewritten in safe code so shared-hosting ASP.NET web sites can now be OpenID providers/consumers.  (issue 14)
+  * Fixed intermittent authentication failure due to indeterministic signature verification.  (issue 47)
 
 == Version 0.2 (unreleased) ==
-  * *Partial trust* scenarios now supported.  Unsafe C# code rewritten in safe code so shared-hosting ASP.NET web sites can now be OpenID providers/consumers.  (issue 14)
   * Added replay attack detection and prevention.  (issue 40)
   * Fixed `MemoryStore` caching where ASP.NET could freely clear out keys in the middle of an authentication causing random failures.  (issue 16)
   * _Heavy_ refactoring to follow more .NET conventions, be easier to 'discover' with 
@@ -38,6 +39,7 @@ Curious what's changed from version to version?  Wonder if it's worth upgrading 
   * Two new ASP.NET controls to make hosting OpenID providers easier.
   * `OpenIdTextBox.ShowLogo` property now defaults to true.
   * !ProviderPortal sample web site's urlrewrite section moved outside of system.web.  (issue 38)
+  * Many more unit tests for more comprehensive coverage of code and scenarios.  Lots of little bugs fixed.
 
 == Version 0.3 (unreleased) ==
 This is in our early planning stages.  Check out our ProjectRoadmap for details.

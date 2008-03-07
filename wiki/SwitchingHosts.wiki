@@ -8,7 +8,7 @@ Advantages of each system are listed below.  Add more if we left any out.
     # More peope are familiar with SVN.
     # SVN is free.
 
-= CodePlex =
+= !CodePlex =
   * Revision control
     # TFS support is built into Visual Studio Team System, so dropping to the command-line for add, delete, rename is no longer necessary.
     # For those without VSTS, several free TFS clients are available, including command-line ones.
@@ -31,4 +31,4 @@ Advantages of each system are listed below.  Add more if we left any out.
     # Lends better to community contributions because everyone can commit to their repository and their changes can be pulled in.
     # Everyone has a complete repository on their drive (it's _smaller_ than an SVN working copy!)
   * Misc
-    # Downside: No hosting providers integrate Git repos with issue tracking, so we'd wan to pair up Git use with CodePlex, Google Code, or some other project hosting site.
+    # Downside: No hosting providers integrate Git repos with issue tracking, so we'd wan to pair up Git use with !CodePlex, Google Code, or some other project hosting site.

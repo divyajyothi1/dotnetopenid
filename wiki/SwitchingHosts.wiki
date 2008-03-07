@@ -1,0 +1,34 @@
+#summary Discusses switching from Google Code to other hosting sites
+#labels Phase-Design
+
+Advantages of each system are listed below.  Add more if we left any out.
+
+= Google Code = 
+  * Revision control
+    # More peope are familiar with SVN.
+    # SVN is free.
+
+= CodePlex =
+  * Revision control
+    # TFS support is built into Visual Studio Team System, so dropping to the command-line for add, delete, rename is no longer necessary.
+    # For those without VSTS, several free TFS clients are available, including command-line ones.
+    # ~~!CodePlex also offers SVN server emulation so you can even keep using SVN clients.~~
+    # Easier patches: Shelvesets would allow easier submission and review of patches
+  * Issue tracking, release management
+    # Issues and releases are more closely tied together, and for any given release people can easily review all the issues that have been fixed (or not) for that release.  
+    # A dedicated page for each release, rather than Google Code's simple file link for downloads with no room for comments.
+  * Misc
+    # RSS feeds for everything that can change: sources, wiki, issues, discussions, releases.
+    # Better web visitor statistics
+    # Not that we have to give up the dotnetopenid mailing list, but there's a forum-style Discussions tab on the project pages that is nicer to navigate than the Google Groups web site for those not on the mailing list.
+    # It's "the" place to host .NET projects (although this is admittedly an inconsequential thing, really)
+    # There is facility for structured wiki pages, but some of the things we use Google Code's wiki for can be done better with the dedicates areas for those things on the project site at !CodePlex.
+
+= Git =
+  * Revision control
+    # Git is free.
+    # _Great_ support for branches, tags.  (superior to SVN)
+    # Lends better to community contributions because everyone can commit to their repository and their changes can be pulled in.
+    # Everyone has a complete repository on their drive (it's _smaller_ than an SVN working copy!)
+  * Misc
+    # Downside: No hosting providers integrate Git repos with issue tracking, so we'd wan to pair up Git use with CodePlex, Google Code, or some other project hosting site.

@@ -1,0 +1,13 @@
+#summary How to get started using Git for source control
+
+_The following is a *proposed* document.  It's assertions are not yet agreed upon._
+
+= Introduction =
+
+DotNetOpenId is moving its source control from Google Code to Git, which is a decentralized revision tracking system.
+
+= Details =
+
+[http://repo.or.cz/w/dotnetopenid.git DotNetOpenId central source repository]
+
+[http://git.or.cz/course/svn.html Crash Course on Git for SVN users]

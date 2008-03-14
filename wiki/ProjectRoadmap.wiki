@@ -7,9 +7,9 @@ This is where we're at presently.  A working implementation of OpenID 1.1 consum
 
 = Version 0.2 =
 
-We will do refactoring to leverage more .NET-centric features, such as generics, anonymous delegates and so on that were not in the Janrain and Python versions of OpenId that this source code was originally inspired from. 
+This is a heavily refactored version to leverage more .NET-centric features, such as generics, anonymous delegates and so on that were not in the Janrain and Python versions of OpenId that this source code was originally inspired from. 
 
-Those who upgrade to this version from 0.1 may have breaking changes to deal with.
+Those who upgrade to this version from 0.1 will have breaking changes to deal with.
 
 = Version 0.3 =
 

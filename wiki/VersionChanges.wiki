@@ -26,7 +26,7 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
   * Improved security by adding `TrustRoot` validation that was missing from earlier versions.
   * Added `OpenIdTextBox.TrustRootUrl` property.  (issue 39)
 
-== Version 0.1.2 (unreleased) ==
+== Version 0.1.2 ==
   * Session state is no longer required for consumers.  (issue 37)
   * *Partial trust* scenarios now supported.  Unsafe C# code rewritten in safe code so shared-hosting ASP.NET web sites can now be OpenID providers/consumers.  (issue 14)
   * Fixed intermittent authentication failure due to indeterministic signature verification.  (issue 47)

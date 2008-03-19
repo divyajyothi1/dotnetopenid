@@ -4,7 +4,7 @@ _The following is a *proposed* document.  It's assertions are not yet agreed upo
 
 = Introduction =
 
-DotNetOpenId is moving its source control from Google Code to Git, which is a decentralized revision tracking system.
+!DotNetOpenId is moving its source control from Google Code to Git, which is a decentralized revision tracking system.
 
 Source location: [http://repo.or.cz/w/dotnetopenid.git DotNetOpenId central source repository]
 

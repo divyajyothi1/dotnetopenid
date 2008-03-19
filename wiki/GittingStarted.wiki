@@ -1,4 +1,4 @@
-#summary How to get started using Git for source control
+﻿#summary How to get started using Git for source control
 
 _The following is a *proposed* document.  It's assertions are not yet agreed upon._
 
@@ -6,8 +6,17 @@ _The following is a *proposed* document.  It's assertions are not yet agreed upo
 
 DotNetOpenId is moving its source control from Google Code to Git, which is a decentralized revision tracking system.
 
+Source location: [http://repo.or.cz/w/dotnetopenid.git DotNetOpenId central source repository]
+
 = Details =
+  * [SwitchingHosts Why Git over SVN?]
+  * [http://git.or.cz/course/svn.html Crash Course on Git for SVN users]
 
-[http://repo.or.cz/w/dotnetopenid.git DotNetOpenId central source repository]
+= Getting sources =
+There are two ways to get sources: download a one-time snapshot using your browser or use a Git client to clone the repository and follow it as it evolves.  You can get instructions for either on the [http://repo.or.cz/w/dotnetopenid.git project source web page].
 
-[http://git.or.cz/course/svn.html Crash Course on Git for SVN users]
+Git is available on [http://code.google.com/p/msysgit/ Windows] and [http://git.or.cz/ Linux].  You can find out more about [http://en.wikipedia.org/wiki/Git_%28software%29 Git on Wikipedia].
+
+= Commit access =
+If you have been invited by a project coordinator to receive commit access to our official Git repository, here is what you need to know.
+  # Send us your SSH public key.  You can get directions for generating a public key for yourself from here: [http://github.com/guides/providing-your-ssh-key#windowsxp]

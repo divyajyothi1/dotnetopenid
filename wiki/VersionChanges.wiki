@@ -1,4 +1,4 @@
-#summary Describe significant changes in each new tagged version
+﻿#summary Describe significant changes in each new tagged version
 #labels Phase-Deploy,Featured
 
 = Changes between versions =
@@ -31,15 +31,15 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
   * *Partial trust* scenarios now supported.  Unsafe C# code rewritten in safe code so shared-hosting ASP.NET web sites can now be OpenID providers/consumers.  (issue 14)
   * Fixed intermittent authentication failure due to indeterministic signature verification.  (issue 47)
 
-== Version 0.2 (unreleased) ==
+== Version 1.0 (unreleased) ==
   * Added replay attack detection and prevention.  (issue 40)
   * Fixed `MemoryStore` caching where ASP.NET could freely clear out keys in the middle of an authentication causing random failures.  (issue 16)
   * _Heavy_ refactoring to follow more .NET conventions, be easier to 'discover' with 
   * Most classes now belong to the new `DotNetOpenId` namespace.  
-  * Two new ASP.NET controls to make hosting OpenID providers easier.
+  * Two new ASP.NET controls to make hosting OpenID providers or identity forwarders easier.
   * `OpenIdTextBox.ShowLogo` property now defaults to true.
   * !ProviderPortal sample web site's urlrewrite section moved outside of system.web.  (issue 38)
   * Many more unit tests for more comprehensive coverage of code and scenarios.  Lots of little bugs fixed.
 
-== Version 0.3 (unreleased) ==
-This is in our early planning stages.  Check out our ProjectRoadmap for details.
+== Version 2.0 (unreleased) ==
+Check out our ProjectRoadmap for details.

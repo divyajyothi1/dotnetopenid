@@ -1,20 +1,17 @@
-#summary The DotNetOpenID project road map.
+﻿#summary The DotNetOpenID project road map.
 
 Following is how we envision future development of the DotNetOpenID project. 
 
 = Version 0.1 =
 This is where we're at presently.  A working implementation of OpenID 1.1 consumers and providers.
 
-= Version 0.2 =
+= Version 1.0 =
 
 This is a heavily refactored version to leverage more .NET-centric features, such as generics, anonymous delegates and so on that were not in the Janrain and Python versions of OpenId that this source code was originally inspired from. 
 
 Those who upgrade to this version from 0.1 will have breaking changes to deal with.
 
-= Version 0.3 =
+= Version 2.0 =
 
-Add support for OpenID 2.0.
-
-= Version 0.4 =
-
-In this milestone we should all be very familiar with OpenID, what it's strengths and weaknesses are, and hopefully we can use this to innovate and build in new features and enhancements. We may add some ASP.NET helpers to make building OpenID providers easier as well.  
+Add support for OpenID 2.0 for both relying parties (consumers) and providers.
+More refactoring to bring DotNetOpenId terminology to OpenID 2.0 standards.  (i.e. consumer becomes 'relying party', delegate URL becomes 'localid', etc.)

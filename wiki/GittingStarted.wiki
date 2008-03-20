@@ -20,3 +20,5 @@ Git is available on [http://code.google.com/p/msysgit/ Windows] and [http://git.
 = Commit access =
 If you have been invited by a project coordinator to receive commit access to our official Git repository, here is what you need to know.
   # Send us your SSH public key.  You can get directions for generating a public key for yourself from here: [http://github.com/guides/providing-your-ssh-key#windowsxp]
+  # Read up on the Contribute page.
+  # Definitely install Git and clone the repository.

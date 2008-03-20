@@ -21,9 +21,8 @@ Git is available on [http://code.google.com/p/msysgit/ Windows] and [http://git.
   * [SwitchingHosts Why Git over SVN?]
   * [http://git.or.cz/course/svn.html Crash Course on Git for SVN users]
 
-Google's SVN server for this project doesn't have the latest work on this library.  But if you still prefer to use SVN to download an old version, you may find it here:
+Google's SVN server for this project doesn't have the latest work on this library.  But if you still prefer to use SVN to download an old version, you may [http://code.google.com/p/dotnetopenid/source/checkout still use it].
 
-`svn checkout http://dotnetopenid.googlecode.com/svn/trunk/ dotnetopenid-read-only`
 
 === Which branch should you use? ===
 On the web page for our repository, at the bottom you'll see a section called "heads".  These are our branches.  "master" is where most of the active work goes, while the others are our stabilization branches that eventually turn into released versions.  When a version is released an entry under the "tags" section is added.  

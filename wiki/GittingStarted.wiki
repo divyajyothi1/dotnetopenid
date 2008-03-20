@@ -1,24 +1,36 @@
 ﻿#summary How to get started using Git for source control
 
-_The following is a *proposed* document.  It's assertions are not yet agreed upon._
+*Command-Line Access*
 
-= Introduction =
+If you plan to make changes either for yourself or to contribute back, use this command to check out the code using Git:
 
-!DotNetOpenId is moving its source control from Google Code to Git, which is a decentralized revision tracking system.
+`git clone git://repo.or.cz/dotnetopenid.git`
 
-Source location: [http://repo.or.cz/w/dotnetopenid.git DotNetOpenId central source repository]
+*Browser Access*
 
-= Details =
+If you only want a source code drop and do not plan on contributing changes back, you may also use your browser to visit:
+
+Url: [http://repo.or.cz/w/dotnetopenid.git]
+
+From here you may download individual files or "snapshots" of anything you like.  If you download a snapshot and you're using Windows, you'll need to know 
+[http://pdssbn.astro.umd.edu/nodehtml/tgz_files.html how to extract source from .tar.gz files].  But if you're using Windows and aren't familiar with .tar.gz files, it is probably easier for you to install Git and use the above command-line to get the source code.
+
+=== Details ===
+Git is available on [http://code.google.com/p/msysgit/ Windows] and [http://git.or.cz/ Linux].  You can find out more about [http://en.wikipedia.org/wiki/Git_%28software%29 Git on Wikipedia].
+
   * [SwitchingHosts Why Git over SVN?]
   * [http://git.or.cz/course/svn.html Crash Course on Git for SVN users]
 
-= Getting sources =
-There are two ways to get sources: download a one-time snapshot using your browser or use a Git client to clone the repository and follow it as it evolves.  You can get instructions for either on the [http://repo.or.cz/w/dotnetopenid.git project source web page].
+=== Which branch should you use? ===
+On the web page for our repository, at the bottom you'll see a section called "heads".  These are our branches.  "master" is where most of the active work goes, while the others are our stabilization branches that eventually turn into released versions.  When a version is released an entry under the "tags" section is added.  
 
-Git is available on [http://code.google.com/p/msysgit/ Windows] and [http://git.or.cz/ Linux].  You can find out more about [http://en.wikipedia.org/wiki/Git_%28software%29 Git on Wikipedia].
+If you're planning on using this library in a production web site, _avoid using master_, as we cannot guarantee its readiness for production web sites. For production use, you should download a tagged release, or at very least go for one of the stabilization branches.
 
-= Commit access =
+=== Commit access ===
 If you have been invited by a project coordinator to receive commit access to our official Git repository, here is what you need to know.
-  # Send us your SSH public key.  You can get directions for generating a public key for yourself from here: [http://github.com/guides/providing-your-ssh-key#windowsxp]
+  # Generate an SSH public/private key pair.  You can get directions for generating a public key for yourself from here: [http://github.com/guides/providing-your-ssh-key#windowsxp]
+  # [http://repo.or.cz/m/reguser.cgi Register as a user] at our Git host
+  # Send us your new repo.or.cz username.
   # Read up on the Contribute page.
   # Definitely install Git and clone the repository.
+  # Set up a remote to the git central repository with the push going to this address, where _username_ is replaced by your repo.or.cz username: git+ssh://_username_@repo.or.cz/srv/git/dotnetopenid.git

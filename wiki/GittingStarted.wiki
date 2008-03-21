@@ -12,8 +12,7 @@ If you only want a source code drop and do not plan on contributing changes back
 
 Url: [http://repo.or.cz/w/dotnetopenid.git]
 
-From here you may download individual files or "snapshots" of anything you like.  If you download a snapshot and you're using Windows, you'll need to know 
-[http://pdssbn.astro.umd.edu/nodehtml/tgz_files.html how to extract source from .tar.gz files].  But if you're using Windows and aren't familiar with .tar.gz files, it is probably easier for you to install Git and use the above command-line to get the source code.
+From here you may download individual files or "snapshots" of anything you like.  If you download a snapshot and you're using Windows, you'll need to extract the .tar.gz file.  You can use [http://www.winzip.com WinZip] for this, or read up on [http://pdssbn.astro.umd.edu/nodehtml/tgz_files.html how to extract source from .tar.gz files] using FOSS (but the FOSS-way is harder).  
 
 === Details ===
 Git is available on [http://code.google.com/p/msysgit/ Windows] and [http://git.or.cz/ Linux].  You can find out more about [http://en.wikipedia.org/wiki/Git_%28software%29 Git on Wikipedia].

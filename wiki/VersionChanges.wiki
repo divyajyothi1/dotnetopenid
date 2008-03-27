@@ -32,6 +32,7 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
   * Fixed intermittent authentication failure due to indeterministic signature verification.  (issue 47)
 
 == Version 1.0 (unreleased) ==
+_Timeline: First half of April 2008_
   * Added replay attack detection and prevention.  (issue 40)
   * Fixed `MemoryStore` caching where ASP.NET could freely clear out keys in the middle of an authentication causing random failures.  (issue 16)
   * _Heavy_ refactoring to follow more .NET conventions, be easier to 'discover' with 
@@ -42,4 +43,11 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
   * Many more unit tests for more comprehensive coverage of code and scenarios.  Lots of little bugs fixed.
 
 == Version 2.0 (unreleased) ==
-Check out our ProjectRoadmap for details.
+_Timeline: May-June 2008_
+  * Added support for OpenID 2.0 Relying Parties (a.k.a. consumers), including but not limited to these features:
+    * Xri and i-name support
+    * More secure hashing algorithms (SHA-256)
+    * Interop with Yahoo and other OpenID 2.0-only providers
+    * Better security against replay attacks.
+  * *Planned:* Add support for OpenID 2.0 Providers
+  * *Planned:* Much more comprehensive testing of common scenarios and possible security exploits.

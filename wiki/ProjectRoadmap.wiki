@@ -14,4 +14,3 @@ Those who upgrade to this version from 0.1 will have breaking changes to deal wi
 = Version 2.0 =
 
 Add support for OpenID 2.0 for both relying parties (consumers) and providers.
-More refactoring to bring DotNetOpenId terminology to OpenID 2.0 standards.  (i.e. consumer becomes 'relying party', delegate URL becomes 'localid', etc.)

@@ -2,7 +2,7 @@
 
 = Details =
 
-As stated on the OpenId site (http://openid.net):
+As stated on the OpenId site ([http://openid.net]):
 
 _OpenID is an open, decentralized, free framework for user-centric digital identity.
 
@@ -15,4 +15,3 @@ To login to an OpenID-enabled website (even one you've never been to before), ju
 Beyond Authentication, the OpenID framework provides the means for users to share other components of their digital identity. By utilizing the emerging OpenID Attribute Exchange specification (see specs), users are able to clearly control what pieces of information can be shared by their Identity Provider, such as their name, address, or phone number.
 
 Today, OpenID has emerged as the de-facto user-centric identity framework allowing millions of people to interact online. With programs such as the I Want My OpenID Bounty, developers of Open Source projects are rapidly adding support for OpenID in order to enable their communities._
-

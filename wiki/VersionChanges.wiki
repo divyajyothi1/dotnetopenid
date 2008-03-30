@@ -6,30 +6,17 @@
 Curious what's changed from version to version?  Wonder if it's worth upgrading or what breaking changes may exist?  This is the page for you.  
 Not all fixed issues are listed here, but the more noteworthy ones are.  Unless explicitly said otherwise, each version has all the enhancements of the previously listed ones.
 
-== Version M1 ==
-  * First release of a working library.  
-  * Full support for OpenID 1.1 consumers and providers.
-  * Easy to use ASP.NET controls for OpenID consumers.
-
-== Version 0.1 ==
-  * Fixed bug where only the first LINK tag in an HTML document would be parsed for openid.server information. (issue 15)
-  * Fixed `OpenIdTextBox` bug where old failure cases would cause all future cases to fail as well. (issue 17)
-  * `OpenIdTextBox` now catches some failure exceptions and fires the Error event as appropriate. (issue 19)
-  * Removed requirement for `http://` to precede the host in the `OpenIdLogin` control. (issue 25)
-
-== Version 0.1.1 ==
-  * Added `OpenIdTextBox.ShowLogo` property to easily show OpenID logo from embedded resource. (issue 25)
-  * Added a Remember Me checkbox to the `OpenIdLogin` control.  (issue 32)
-  * Added `OpenIdLogin.RegisterVisible` property.
-  * Fixed UTC/Local `DateTime` inconsistent usage.  (issue 18)
-  * Fixed bug where one of `CheckIdRequest`'s constructors would always fail due to passing `Uri.AbsolutePath` to `TrustRoot`'s constructor.  (issue 35)
-  * Improved security by adding `TrustRoot` validation that was missing from earlier versions.
-  * Added `OpenIdTextBox.TrustRootUrl` property.  (issue 39)
-
-== Version 0.1.2 ==
-  * Session state is no longer required for consumers.  (issue 37)
-  * *Partial trust* scenarios now supported.  Unsafe C# code rewritten in safe code so shared-hosting ASP.NET web sites can now be OpenID providers/consumers.  (issue 14)
-  * Fixed intermittent authentication failure due to indeterministic signature verification.  (issue 47)
+== Version 2.0 (unreleased) ==
+_Timeline: May-June 2008_
+  * Added support for OpenID 2.0 Relying Parties (a.k.a. consumers), including but not limited to these features:
+    * Xri and i-name support
+    * Directed identity support
+    * More secure hashing algorithms (SHA-256)
+    * Interop with Yahoo and other OpenID 2.0-only providers
+    * Better security against replay attacks.
+  * Added support for OpenID 2.0 Providers
+  * *Planned:* Much more comprehensive testing of common scenarios and possible security exploits.
+  * More comprehensive HTML-based identity discovery.
 
 == Version 1.0 (unreleased) ==
 _Timeline: First half of April 2008_
@@ -42,14 +29,27 @@ _Timeline: First half of April 2008_
   * !ProviderPortal sample web site's urlrewrite section moved outside of system.web.  (issue 38)
   * Many more unit tests for more comprehensive coverage of code and scenarios.  Lots of little bugs fixed.
 
-== Version 2.0 (unreleased) ==
-_Timeline: May-June 2008_
-  * Added support for OpenID 2.0 Relying Parties (a.k.a. consumers), including but not limited to these features:
-    * Xri and i-name support
-    * Directed identity support
-    * More secure hashing algorithms (SHA-256)
-    * Interop with Yahoo and other OpenID 2.0-only providers
-    * Better security against replay attacks.
-  * Added support for OpenID 2.0 Providers
-  * *Planned:* Much more comprehensive testing of common scenarios and possible security exploits.
-  * More comprehensive HTML-based identity discovery.
+== Version 0.1.2 ==
+  * Session state is no longer required for consumers.  (issue 37)
+  * *Partial trust* scenarios now supported.  Unsafe C# code rewritten in safe code so shared-hosting ASP.NET web sites can now be OpenID providers/consumers.  (issue 14)
+  * Fixed intermittent authentication failure due to indeterministic signature verification.  (issue 47)
+
+== Version 0.1.1 ==
+  * Added `OpenIdTextBox.ShowLogo` property to easily show OpenID logo from embedded resource. (issue 25)
+  * Added a Remember Me checkbox to the `OpenIdLogin` control.  (issue 32)
+  * Added `OpenIdLogin.RegisterVisible` property.
+  * Fixed UTC/Local `DateTime` inconsistent usage.  (issue 18)
+  * Fixed bug where one of `CheckIdRequest`'s constructors would always fail due to passing `Uri.AbsolutePath` to `TrustRoot`'s constructor.  (issue 35)
+  * Improved security by adding `TrustRoot` validation that was missing from earlier versions.
+  * Added `OpenIdTextBox.TrustRootUrl` property.  (issue 39)
+
+== Version 0.1.0 ==
+  * Fixed bug where only the first LINK tag in an HTML document would be parsed for openid.server information. (issue 15)
+  * Fixed `OpenIdTextBox` bug where old failure cases would cause all future cases to fail as well. (issue 17)
+  * `OpenIdTextBox` now catches some failure exceptions and fires the Error event as appropriate. (issue 19)
+  * Removed requirement for `http://` to precede the host in the `OpenIdLogin` control. (issue 25)
+
+== Version M1 ==
+  * First release of a working library.  
+  * Full support for OpenID 1.1 consumers and providers.
+  * Easy to use ASP.NET controls for OpenID consumers.

@@ -19,7 +19,7 @@ _Timeline: April 2008_
     * Better security against replay attacks.
   * *Planned:* Much more comprehensive testing of common scenarios and possible security exploits.
   * More comprehensive HTML-based identity discovery.
-  * _Completely_ stateless mode supported (not even HttpApplication state).
+  * _Completely_ stateless mode supported for Relying Parties (not even HttpApplication state).
 
 == Version 1.0 (unreleased) ==
 _Timeline: April 2008_

@@ -46,6 +46,7 @@ _Timeline: First half of April 2008_
 _Timeline: May-June 2008_
   * Added support for OpenID 2.0 Relying Parties (a.k.a. consumers), including but not limited to these features:
     * Xri and i-name support
+    * Directed identity support
     * More secure hashing algorithms (SHA-256)
     * Interop with Yahoo and other OpenID 2.0-only providers
     * Better security against replay attacks.

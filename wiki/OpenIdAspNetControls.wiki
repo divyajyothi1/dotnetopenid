@@ -1,7 +1,0 @@
-#summary Andrew Arnott's ASP.NET OpenId controls
-
-= Details =
-
-Andrew originally took the BooLibraries and built a set of ASP.NET controls to easily implement their functionality into ASP.NET websites.
-
-You can find the post here: http://blog.nerdbank.net/2007/01/aspnet-drop-in-control-to-enable-openid.html

@@ -6,23 +6,25 @@
 Curious what's changed from version to version?  Wonder if it's worth upgrading or what breaking changes may exist?  This is the page for you.  
 Not all fixed issues are listed here, but the more noteworthy ones are.  Unless explicitly said otherwise, each version has all the enhancements of the previously listed ones.
 
+== Version 2.1 (unreleased) ==
+  * *Planned:* Support for OpenID extensions that do not require authentication to be occurring at all.
+
 == Version 2.0 (unreleased) ==
-_Timeline: May-June 2008_
-  * Added support for OpenID 2.0 Relying Parties (a.k.a. consumers), including but not limited to these features:
+_Timeline: April 2008_
+  * Added support for *OpenID 2.0 Relying Parties and Providers*, including but not limited to these features:
     * Xri and i-name support
     * Directed identity support
     * More secure hashing algorithms (SHA-256)
     * Interop with Yahoo and other OpenID 2.0-only providers
     * Better security against replay attacks.
-  * Added support for OpenID 2.0 Providers
   * *Planned:* Much more comprehensive testing of common scenarios and possible security exploits.
   * More comprehensive HTML-based identity discovery.
+  * _Completely_ stateless mode supported (not even HttpApplication state).
 
 == Version 1.0 (unreleased) ==
-_Timeline: First half of April 2008_
+_Timeline: April 2008_
   * Added replay attack detection and prevention.  (issue 40)
   * Fixed `MemoryStore` caching where ASP.NET could freely clear out keys in the middle of an authentication causing random failures.  (issue 16)
-  * _Completely_ stateless mode supported (not even HttpApplication state).
   * _Heavy_ refactoring to follow more .NET conventions, be easier to 'discover' with 
   * Most classes now belong to the new `DotNetOpenId` namespace.  
   * Two new ASP.NET controls to make hosting OpenID providers or identity forwarders easier.

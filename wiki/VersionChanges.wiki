@@ -49,5 +49,6 @@ _Timeline: May-June 2008_
     * More secure hashing algorithms (SHA-256)
     * Interop with Yahoo and other OpenID 2.0-only providers
     * Better security against replay attacks.
-  * *Planned:* Add support for OpenID 2.0 Providers
+  * Added support for OpenID 2.0 Providers
   * *Planned:* Much more comprehensive testing of common scenarios and possible security exploits.
+  * More comprehensive HTML-based identity discovery.

@@ -22,6 +22,7 @@ _Timeline: May-June 2008_
 _Timeline: First half of April 2008_
   * Added replay attack detection and prevention.  (issue 40)
   * Fixed `MemoryStore` caching where ASP.NET could freely clear out keys in the middle of an authentication causing random failures.  (issue 16)
+  * _Completely_ stateless mode supported (not even HttpApplication state).
   * _Heavy_ refactoring to follow more .NET conventions, be easier to 'discover' with 
   * Most classes now belong to the new `DotNetOpenId` namespace.  
   * Two new ASP.NET controls to make hosting OpenID providers or identity forwarders easier.

@@ -8,6 +8,7 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
 
 == Version 2.1 (unreleased) ==
   * *Planned:* Support for OpenID extensions that do not require authentication to be occurring at all.
+  * *Planned:* Add built-in support for [http://openid.net/specs/openid-attribute-exchange-1_0.html Attribute Exchange] and [http://openid.net/specs/openid-provider-authentication-policy-extension-1_0-01.html PAPE] extensions.
 
 == Version 2.0 (unreleased) ==
 _Timeline: April 2008_
@@ -21,8 +22,10 @@ _Timeline: April 2008_
   * More comprehensive HTML-based identity discovery.
   * _Completely_ stateless mode supported for Relying Parties (not even !HttpApplication state).
 
-== Version 1.0 (unreleased) ==
-_Timeline: April 2008_
+== Version 1.0.1 ==
+  * Fixed Provider bug where all issued associations lasted only one minute.  This has no impact on sites only using Relying Party functionality in the library.
+
+== Version 1.0.0 ==
   * Added replay attack detection and prevention.  (issue 40)
   * Fixed `MemoryStore` caching where ASP.NET could freely clear out keys in the middle of an authentication causing random failures.  (issue 16)
   * _Heavy_ refactoring to follow more .NET conventions, be easier to 'discover' with 

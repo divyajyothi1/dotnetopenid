@@ -10,7 +10,7 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
   * *Planned:* Support for OpenID extensions that do not require authentication to be occurring at all.
   * *Planned:* Add built-in support for [http://openid.net/specs/openid-attribute-exchange-1_0.html Attribute Exchange] and [http://openid.net/specs/openid-provider-authentication-policy-extension-1_0-01.html PAPE] extensions.
 
-== Version 2.0 (unreleased) ==
+== Version 2.0 (in beta) ==
 _Timeline: April 2008_
   * Added support for *OpenID 2.0 Relying Parties and Providers*, including but not limited to these features:
     * Xri and i-name support
@@ -18,9 +18,13 @@ _Timeline: April 2008_
     * More secure hashing algorithms (SHA-256)
     * Interop with Yahoo and other OpenID 2.0-only providers
     * Better security against replay attacks.
-  * *Planned:* Much more comprehensive testing of common scenarios and possible security exploits.
+    * Send unsolicited positive assertions from providers
+  * Much more comprehensive testing of common scenarios and possible security exploits.
   * More comprehensive HTML-based identity discovery.
-  * _Completely_ stateless mode supported for Relying Parties (not even !HttpApplication state).
+  * _Completely_ stateless mode support for Relying Parties (not even !HttpApplication state).
+  * New !OpenIdMobileTextBox ASP.NET control.
+  * All relying party ASP.NET controls now support immediate mode.
+  * Improved support for custom stores that have to serialize associations (for databases, etc.)
 
 == Version 1.0.1 ==
   * Fixed Provider bug where all issued associations lasted only one minute.  This has no impact on sites only using Relying Party functionality in the library.

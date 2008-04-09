@@ -25,6 +25,7 @@ _Timeline: April 2008_
   * New !OpenIdMobileTextBox ASP.NET control.
   * All relying party ASP.NET controls now support immediate mode.
   * Improved support for custom stores that have to serialize associations (for databases, etc.)
+  * Debugger attributes to make stepping through the code easier.
 
 == Version 1.0.1 ==
   * Fixed Provider bug where all issued associations lasted only one minute.  This has no impact on sites only using Relying Party functionality in the library.

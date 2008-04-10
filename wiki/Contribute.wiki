@@ -8,10 +8,10 @@ There are two kinds of contributors: those who have commit access to the source 
 If you'd like to contribute, here are the steps to submit a patch.
 
   # File an issue with our [http://code.google.com/p/dotnetopenid/issues/list Issues Tracker] to present and discuss the bug you have found or feature you would like to add. 
-  # [http://code.google.com/p/dotnetopenid/source/checkout Check out the latest sources] for the version/branch you wish to contribute to.  Use the SVN tool to download the sources rather than just downloading a sources drop from the Google Code web site.
+  # [http://code.google.com/p/dotnetopenid/source Clone the git repository].  Use [GittingStarted Git tool] to download the sources rather than just downloading a sources drop from the Google Code web site.
   # Make your changes to those sources.  Follow the project's CodingConventions.
   # Make your change as small as possible.  The patch should include only those code changes necessary to fix the bug or add the feature you are contributing.
   # Make sure whitespace is properly maintained.  If the code you are changing uses tabs for indentation, use tabs for your indentation; ditto for spaces.  Curly-brace placement and other formatting rules should follow the surrounding code as well.
-  # Be sure you've *svn add*'d any new files you've introduced.  Also make sure you have _not_ added any compiled or temporary files.  
-  # Use "svn diff > yourfeature.patch" or similar to generate a diff of your change.  Open the file up in an editor to review and make sure only changes you intended are included.
-  # Attach the .patch file to the Issue you filed.
+  # Be sure you've *git add*'d any new or changed files.  Also make sure you have _not_ added any compiled or temporary files.  
+  # Commit your change to your own cloned git repo using "git commit". 
+  # Read GittingStarted on how to share a patch.

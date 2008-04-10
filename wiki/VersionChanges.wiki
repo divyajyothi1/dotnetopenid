@@ -27,6 +27,9 @@ _Timeline: April 2008_
   * Improved support for custom stores that have to serialize associations (for databases, etc.)
   * Debugger attributes to make stepping through the code easier.
 
+== Version 1.0.2 ==
+  * Fixed localization bug that makes some DotNetOpenId relying party sites fail to authenticate users whose browsers are set to a neutral culture (i.e. 'en' instead of 'en-US').
+
 == Version 1.0.1 ==
   * Fixed Provider bug where all issued associations lasted only one minute.  This has no impact on sites only using Relying Party functionality in the library.
 

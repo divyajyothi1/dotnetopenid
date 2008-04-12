@@ -12,13 +12,13 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
 
 == Version 2.0 (in beta) ==
 _Timeline: April 2008_
-  * Added support for *OpenID 2.0 Relying Parties and Providers*, including but not limited to these features:
+  * Support for *OpenID 2.0 Relying Parties and Providers*, including but not limited to these features:
     * Xri and i-name support
     * Directed identity support
     * More secure hashing algorithms (SHA-256)
     * Interop with Yahoo and other OpenID 2.0-only providers
     * Better security against replay attacks.
-    * Send unsolicited positive assertions from providers
+    * Send unsolicited positive assertions from providers to automatically log your users in to relying party web sites.
   * Much more comprehensive testing of common scenarios and possible security exploits.
   * More comprehensive HTML-based identity discovery.
   * _Completely_ stateless mode support for Relying Parties (not even !HttpApplication state).

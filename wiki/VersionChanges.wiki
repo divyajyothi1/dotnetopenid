@@ -9,6 +9,7 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
 == Version 2.1 (unreleased) ==
   * *Planned:* Support for OpenID extensions that do not require authentication to be occurring at all.
   * *Planned:* Add built-in support for [http://openid.net/specs/openid-attribute-exchange-1_0.html Attribute Exchange] and [http://openid.net/specs/openid-provider-authentication-policy-extension-1_0-01.html PAPE] extensions.
+  * Timeouts and other paranoid HTTP settings adjustable through public members (Issue 62).
 
 == Version 2.0 ==
   * Support for *OpenID 2.0 Relying Parties and Providers*, including but not limited to these features:

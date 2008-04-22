@@ -6,9 +6,12 @@
 Curious what's changed from version to version?  Wonder if it's worth upgrading or what breaking changes may exist?  This is the page for you.  
 Not all fixed issues are listed here, but the more noteworthy ones are.  Unless explicitly said otherwise, each version has all the enhancements of the previously listed ones.
 
+== Version 2.x (unreleased) ==
+  * *Planned:* Add built-in support for the [http://openid.net/specs/openid-provider-authentication-policy-extension-1_0-01.html PAPE] extension.
+
 == Version 2.1 (unreleased) ==
-  * *Planned:* Support for OpenID extensions that do not require authentication to be occurring at all.
-  * *Planned:* Add built-in support for [http://openid.net/specs/openid-attribute-exchange-1_0.html Attribute Exchange] and [http://openid.net/specs/openid-provider-authentication-policy-extension-1_0-01.html PAPE] extensions.
+_Timeline: April 2008_
+  * *Planned:* Add built-in support for the [http://openid.net/specs/openid-attribute-exchange-1_0.html Attribute Exchange] extension.
   * Timeouts and other paranoid HTTP settings adjustable through public members (Issue 62).
 
 == Version 2.0 ==

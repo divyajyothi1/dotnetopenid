@@ -12,13 +12,13 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
 == Version 2.1.0 ==
   * Add built-in support for the [http://openid.net/specs/openid-attribute-exchange-1_0.html Attribute Exchange] extension (Issue 58).
   * Breaking changes for simple registration extension and any custom built extensions by users of this library to simplify use of and writing new extensions.
-  * !INonceStore now easier to implement for custom stores while protecting against replay attacks.  Breaking change for anyone implementing custom store.  (Issue 66).
+  * INonceStore now easier to implement for custom stores while protecting against replay attacks.  Breaking change for anyone implementing custom store.  (Issue 66).
   * Added sample ASP.NET MVC relying party application (Issue 61).
   * Timeouts and other paranoid HTTP settings adjustable through public members (Issue 62).
 
 == Version 2.0.1 ==
   * Fixed unhandled exception when HTTP responses lack a Content-Type header.
-  * Clarified !DateTimeKind of !Nonce.ExpirationDate.
+  * Clarified !DateTimeKind of Nonce.!ExpirationDate.
   * Official builds now strong-name signed.
 
 == Version 2.0.0 ==

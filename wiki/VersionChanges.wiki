@@ -14,7 +14,7 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
   * Realm and return_to arguments are consistent with explicit/implicit port inclusion for better interop with other libraries (Issue 71).
   * Better handling of HTTP/1.0 servers that do not support "Expect: 100 Continue" header. (Issue 72)
   * Fixed Realm implicit conversion handling of null values.
-  * Fixed realm bug where **.domain.com would throw ArgumentOutOfRangeException when matching against domain.com.
+  * Fixed realm bug where ***.domain.com would throw ArgumentOutOfRangeException when matching against domain.com.
   * Trace warning when return_to URL includes openid parameters from a previous attempt.
 
 == Version 2.1.0 ==

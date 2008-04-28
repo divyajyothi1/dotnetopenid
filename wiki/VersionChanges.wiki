@@ -9,6 +9,14 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
 == Version 2.x (unreleased) ==
   * *Planned:* Add built-in support for the [http://openid.net/specs/openid-provider-authentication-policy-extension-1_0-02.html PAPE] extension.
 
+== Version 2.1.1, 2.0.2 ==
+  * Fixed encoding bug in return_to argument and a couple of other places that cause random !FormatExceptions (Issue 73).
+  * Realm and return_to arguments are consistent with explicit/implicit port inclusion for better interop with other libraries (Issue 71).
+  * Better handling of HTTP/1.0 servers that do not support "Expect: 100 Continue" header. (Issue 72)
+  * Fixed Realm implicit conversion handling of null values.
+  * Fixed realm bug where *.domain.com would throw ArgumentOutOfRangeException when matching against domain.com.
+  * Trace warning when return_to URL includes openid parameters from a previous attempt.
+
 == Version 2.1.0 ==
   * Add built-in support for the [http://openid.net/specs/openid-attribute-exchange-1_0.html Attribute Exchange] extension (Issue 58).
   * Breaking changes for simple registration extension and any custom built extensions by users of this library to simplify use of and writing new extensions.

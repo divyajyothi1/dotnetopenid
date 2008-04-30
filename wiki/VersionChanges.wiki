@@ -6,8 +6,8 @@
 Curious what's changed from version to version?  Wonder if it's worth upgrading or what breaking changes may exist?  This is the page for you.  
 Not all fixed issues are listed here, but the more noteworthy ones are.  Unless explicitly said otherwise, each version has all the enhancements of the previously listed ones.
 
-== Version 2.x (unreleased) ==
-  * *Planned:* Add built-in support for the [http://openid.net/specs/openid-provider-authentication-policy-extension-1_0-02.html PAPE] extension.
+== Version 2.2.0 (in beta) ==
+  * Add built-in support for the [http://openid.net/specs/openid-provider-authentication-policy-extension-1_0-02.html PAPE] extension.
 
 == Version 2.1.1, 2.0.2 ==
   * Fixed encoding bug in return_to argument and a couple of other places that cause random !FormatExceptions (Issue 73).

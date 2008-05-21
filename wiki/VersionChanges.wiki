@@ -9,6 +9,9 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
 == Version 2.2.0 (in beta) ==
   * Add built-in support for the [http://openid.net/specs/openid-provider-authentication-policy-extension-1_0-02.html PAPE] extension.
 
+== Version 2.1.2 (unreleased) ==
+  * Fixed cookieless session ASP.NET relying parties (Issue 78).
+
 == Version 2.1.1, 2.0.2 ==
   * Fixed encoding bug in return_to argument and a couple of other places that cause random !FormatExceptions (Issue 73).
   * Realm and return_to arguments are consistent with explicit/implicit port inclusion for better interop with other libraries (Issue 71).

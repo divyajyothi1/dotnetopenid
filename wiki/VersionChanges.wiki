@@ -12,6 +12,7 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
 == Version 2.1.2 (unreleased) ==
   * Security enhancement to protect RPs from malicious OpenID URLs (Issue 64).
   * Fixed cookieless session ASP.NET relying parties (Issue 78).
+  * New HTML and CHM documentation generated from xml doc comments (Issue 70).
 
 == Version 2.1.1, 2.0.2 ==
   * Fixed encoding bug in return_to argument and a couple of other places that cause random !FormatExceptions (Issue 73).

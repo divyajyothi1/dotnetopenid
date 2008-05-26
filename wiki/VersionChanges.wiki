@@ -10,6 +10,7 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
   * Add built-in support for the [http://openid.net/specs/openid-provider-authentication-policy-extension-1_0-02.html PAPE] extension.
 
 == Version 2.1.2 (unreleased) ==
+  * Added RP discovery for return URL verification for Providers (Issue 56).
   * Security enhancement to protect RPs from malicious OpenID URLs (Issue 64).
   * Fixed cookieless session ASP.NET relying parties (Issue 78).
   * New HTML and CHM documentation generated from xml doc comments (Issue 70).

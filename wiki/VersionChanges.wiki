@@ -8,6 +8,7 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
 
 == Version 2.2.0 (in beta) ==
   * Add built-in support for the [http://openid.net/specs/openid-provider-authentication-policy-extension-1_0-02.html PAPE] extension.
+  * Large OpenID messages are now sent/received using form POST.  This required *breaking changes*, see issue for details (Issue 79).
 
 == Version 2.1.2 (unreleased) ==
   * Fixed handling of URLs that start with ?& (Issue 81).

@@ -7,7 +7,7 @@ Curious what's changed from version to version?  Wonder if it's worth upgrading 
 Not all fixed issues are listed here, but the more noteworthy ones are.  Unless explicitly said otherwise, each version has all the enhancements of the previously listed ones.
 
 == Version 2.2.0 (in beta) ==
-  * Add built-in support for the [http://openid.net/specs/openid-provider-authentication-policy-extension-1_0-02.html PAPE] extension.
+  * Add built-in support for the [http://openid.net/specs/openid-provider-authentication-policy-extension-1_0-02.html PAPE] extension (Issue 57).
   * Large OpenID messages are now sent/received using form POST.  This required *breaking changes*, see issue for details (Issue 79).
 
 == Version 2.1.2 (unreleased) ==

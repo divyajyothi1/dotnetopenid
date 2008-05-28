@@ -9,11 +9,11 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
 == Version 2.2.0 (in beta) ==
   * Add built-in support for the [http://openid.net/specs/openid-provider-authentication-policy-extension-1_0-02.html PAPE] extension (Issue 57).
   * Large OpenID messages are now sent/received using form POST.  This required *breaking changes*, see issue for details (Issue 79).
+  * Security enhancement to protect RPs from malicious OpenID URLs (Issue 64).
 
 == Version 2.1.2 (unreleased) ==
   * Fixed handling of URLs that start with ?& (Issue 81).
   * Added RP discovery for return URL verification for Providers (Issue 56).
-  * Security enhancement to protect RPs from malicious OpenID URLs (Issue 64).
   * Fixed cookieless session ASP.NET relying parties (Issue 78).
   * New HTML and CHM documentation generated from xml doc comments (Issue 70).
 

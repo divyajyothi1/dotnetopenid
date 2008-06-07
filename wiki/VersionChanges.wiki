@@ -10,6 +10,8 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
   * Add built-in support for the [http://openid.net/specs/openid-provider-authentication-policy-extension-1_0-02.html PAPE] extension (Issue 57).
   * Large OpenID messages are now sent/received using form POST.  This required *breaking changes*, see issue for details (Issue 79).
   * Security enhancement to protect RPs from malicious OpenID URLs (Issue 64).
+  * Allow for discovery of an Identifier's supported extensions before authentication (Issue 83).
+  * Support extensions that have multiple versions and want to support all of them (Issue 85).
 
 == Version 2.1.2 ==
   * Fixed handling of URLs that start with ?& (Issue 81).

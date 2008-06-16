@@ -11,6 +11,7 @@ If you plan to make changes either for yourself or to contribute back, use this 
 If you only want a source code drop and do not plan on contributing changes back, you may also use your browser to visit either of the following two URLs:
 
 Url 1: [http://repo.or.cz/w/dotnetopenid.git]
+
 Url 2: [http://github.com/AArnott/dotnetopenid/tree]
 
 From here you may download individual files or "snapshots" of anything you like.  If you download a snapshot and you're using Windows, you'll need to extract the .tar.gz file.  You can use [http://www.winzip.com WinZip] for this, or read up on [http://pdssbn.astro.umd.edu/nodehtml/tgz_files.html how to extract source from .tar.gz files] using FOSS (but the FOSS-way is harder).  

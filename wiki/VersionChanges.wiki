@@ -6,7 +6,7 @@
 Curious what's changed from version to version?  Wonder if it's worth upgrading or what breaking changes may exist?  This is the page for you.  
 Not all fixed issues are listed here, but the more noteworthy ones are.  Unless explicitly said otherwise, each version has all the enhancements of the previously listed ones.
 
-== Version 2.2.0 (in beta) ==
+== Version 2.2.0 ==
   * Add built-in support for the [http://openid.net/specs/openid-provider-authentication-policy-extension-1_0-02.html PAPE] extension (Issue 57).
   * Large OpenID messages are now sent/received using form POST.  This required *breaking changes*, see issue for details (Issue 79).
   * Security enhancement to protect RPs from malicious OpenID URLs (Issue 64).
@@ -15,6 +15,7 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
   * Shared hosting strong-name issue fixed (Issue 14).  We've supported partial trust environments for quite a while, but it mysteriously required a recompile at times.  I finally figured it out and this fixes it.
   * Better support for ASP.NET URL rewriting (Issue 86).
   * IAuthenticationRequest/!OpenIdEventArgs !ClaimedIdentifier now returns null in directed identity scenarios instead of the identifier_select URL, and a new !IsDirectedIdentity property has been added.  *Breaking change* (Issue 88).  IAuthenticationResponse.!ClaimedIdentifier, which most sites probably are using, is left unchanged and always provides the correct !ClaimedIdentifier.
+  * ASP.NET MVC sample updated to MVC Preview 3 (Issue 93).
 
 == Version 2.1.2 ==
   * Fixed handling of URLs that start with ?& (Issue 81).

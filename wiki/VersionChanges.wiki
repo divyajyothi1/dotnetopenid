@@ -12,10 +12,12 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
   * Security enhancement to protect RPs from malicious OpenID URLs (Issue 64).
   * Allow for discovery of an Identifier's supported extensions before authentication (Issue 83).
   * Support extensions that have multiple versions and want to support all of them (Issue 85).
-  * Shared hosting strong-name issue fixed (Issue 14).  We've supported partial trust environments for quite a while, but it mysteriously required a recompile at times.  I finally figured it out and this fixes it.
-  * Better support for ASP.NET URL rewriting (Issue 86).
   * IAuthenticationRequest/!OpenIdEventArgs !ClaimedIdentifier now returns null in directed identity scenarios instead of the identifier_select URL, and a new !IsDirectedIdentity property has been added.  *Breaking change* (Issue 88).  IAuthenticationResponse.!ClaimedIdentifier, which most sites probably are using, is left unchanged and always provides the correct !ClaimedIdentifier.
+
+== Version 2.1.3 ==
+  * Better support for ASP.NET URL rewriting (Issue 86).
   * ASP.NET MVC sample updated to MVC Preview 3 (Issue 93).
+  * Shared hosting strong-name issue fixed (Issue 14).  We've supported partial trust environments for quite a while, but it mysteriously required a recompile at times.  I finally figured it out and this fixes it.
 
 == Version 2.1.2 ==
   * Fixed handling of URLs that start with ?& (Issue 81).

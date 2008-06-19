@@ -6,7 +6,7 @@
 Curious what's changed from version to version?  Wonder if it's worth upgrading or what breaking changes may exist?  This is the page for you.  
 Not all fixed issues are listed here, but the more noteworthy ones are.  Unless explicitly said otherwise, each version has all the enhancements of the previously listed ones.
 
-== Version 2.2.1 / 2.1.4 (unreleased) ==
+== Version 2.2.1 / 2.1.4 ==
   * *Security issue*: Fixed community i-name !ClaimedIdentifiers (Issue 96).
   * Fixed some unhandled exceptions when dealing with some (incomplete) XRDS documents.
 

@@ -7,7 +7,8 @@ Curious what's changed from version to version?  Wonder if it's worth upgrading 
 Not all fixed issues are listed here, but the more noteworthy ones are.  Unless explicitly said otherwise, each version has all the enhancements of the previously listed ones.
 
 == Version 2.2.1 / 2.1.4 (unreleased) ==
-  * Fixes community i-name !ClaimedIdentifiers (Issue 96).
+  * Fixed community i-name !ClaimedIdentifiers (Issue 96).
+  * Fixed some unhandled exceptions when dealing with some (incomplete) XRDS documents.
 
 == Version 2.2.0 ==
   * Add built-in support for the [http://openid.net/specs/openid-provider-authentication-policy-extension-1_0-02.html PAPE] extension (Issue 57).

@@ -6,6 +6,24 @@
 Curious what's changed from version to version?  Wonder if it's worth upgrading or what breaking changes may exist?  This is the page for you.  
 Not all fixed issues are listed here, but the more noteworthy ones are.  Unless explicitly said otherwise, each version has all the enhancements of the previously listed ones.
 
+== Version 2.3.0 ==
+  * Provider direct response message content-type now set to application/x-openid-kvf to allow hosting of providers on free !GoDaddy hosting without ads corrupting the message.
+  * RP support for discovering multiple endpoints at a single identifier, custom filtering and sorting by host site.  Includes some intelligent fail-over if first choice OPs are down during authentication.
+  * RP no longer strips Claimed Identifier's #fragment portion. *Very Important Breaking Change*.  See Issue 112 for details that *upgraders must read*.
+  * Provider can now add a #fragment portion to a URI claimed identifier.
+  * Added IAuthenticationResponse.!FriendlyIdentifierForDisplay property.
+
+== Version 2.2.2 ==
+  * Added the !RelyingParty.IProviderEndpoint.Uri property to allow host RP to filter on trusted providers.
+
+== Version 2.1.5 ==
+  * Added XRI Canonical ID verification for more secure logins.
+  * XRIs now resolved entirely using HTTPS.
+  * Added IDSelector support to !OpenIdLogin (Issue 99).
+  * Switched to log4net for logging (log4net.dll is _optional_ in deployment)
+  * Fixed bug in Provider where check_authentication would fail with empty values (Issue 110).
+  * Fixed the way Provider returns error conditions to relying parties.
+
 == Version 2.2.1 / 2.1.4 ==
   * *Security issue*: Fixed community i-name !ClaimedIdentifiers (Issue 96).
   * Fixed some unhandled exceptions when dealing with some (incomplete) XRDS documents.

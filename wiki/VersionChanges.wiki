@@ -6,6 +6,10 @@
 Curious what's changed from version to version?  Wonder if it's worth upgrading or what breaking changes may exist?  This is the page for you.  
 Not all fixed issues are listed here, but the more noteworthy ones are.  Unless explicitly said otherwise, each version has all the enhancements of the previously listed ones.
 
+== Version 2.3.0a/2.2.2a/2.1.5a ==
+  * Fixes !ProviderPortal sample's directed identity support
+  * Fixes all samples' csproj files to correctly reference the !DotNetOpenId.dll assembly.
+
 == Version 2.3.0 ==
   * Provider direct response message content-type now set to application/x-openid-kvf to allow hosting of providers on free !GoDaddy hosting without ads corrupting the message.
   * RP support for discovering multiple endpoints at a single identifier, custom filtering and sorting by host site.  Includes some intelligent fail-over if first choice OPs are down during authentication.

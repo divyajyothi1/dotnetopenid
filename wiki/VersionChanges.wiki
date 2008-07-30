@@ -8,7 +8,7 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
 
 == Version 2.3.0a/2.2.2a/2.1.5a ==
   * Fixes !ProviderPortal sample's directed identity support
-  * Fixes all samples' csproj files to correctly reference the !DotNetOpenId.dll assembly.
+  * Fixes all samples' csproj files to correctly reference the !DotNetOpenId.dll assembly (fixes Issue 117).
 
 == Version 2.3.0 ==
   * Provider direct response message content-type now set to application/x-openid-kvf to allow hosting of providers on free !GoDaddy hosting without ads corrupting the message.

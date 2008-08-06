@@ -6,6 +6,9 @@
 Curious what's changed from version to version?  Wonder if it's worth upgrading or what breaking changes may exist?  This is the page for you.  
 Not all fixed issues are listed here, but the more noteworthy ones are.  Unless explicitly said otherwise, each version has all the enhancements of the previously listed ones.
 
+== Version 2.3.0b/2.2.2b/2.1.5b ==
+  * No changes whatever, except that the binaries are strong-name signed.  Previous releases were strong-name signed, but the last release somehow managed to avoid it by accident.
+
 == Version 2.3.0a/2.2.2a/2.1.5a ==
   * Fixes !ProviderPortal sample's directed identity support
   * Fixes all samples' csproj files to correctly reference the !DotNetOpenId.dll assembly (fixes Issue 117).

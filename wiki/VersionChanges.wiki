@@ -6,6 +6,12 @@
 Curious what's changed from version to version?  Wonder if it's worth upgrading or what breaking changes may exist?  This is the page for you.  
 Not all fixed issues are listed here, but the more noteworthy ones are.  Unless explicitly said otherwise, each version has all the enhancements of the previously listed ones.
 
+== Version 2.3.1 ==
+  * Fixed RP stateless mode that broke directed identity in stateless (Issue 119).
+
+== Version 2.2.3, 2.1.6 ==
+  * Fixed log4net.dll *non*-dependency bug, so that log4net.dll _really_ isn't necessary unless great logging is needed.
+
 == Version 2.3.0b/2.2.2b/2.1.5b ==
   * No changes whatever, except that the binaries are strong-name signed.  Previous releases were strong-name signed, but the last release somehow managed to avoid it by accident.
 

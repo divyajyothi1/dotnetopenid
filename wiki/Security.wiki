@@ -1,0 +1,18 @@
+#summary News and features of DotNetOpenId's security
+
+= DRAFT = 
+
+= News bulletins =
+
+== DNS poisoning + (Debian's) weak HTTPS certificates ==
+A recent security news bulletin revealed that Debian and derivative Linux operating systems have been generating extremely weak HTTPS certificates for years.  As a result, OpenID relying party web sites may be vulnerable to a brute force HTTPS certificate plus DNS poisoning attack to phish users passwords and/or spoof users' identities.  The mitigation for this is for the RP's OpenID implementation to check the HTTPS certificate revocation list (CRL) for added security against these weak certificates.  
+
+Since !DotNetOpenId is based on the .NET platform and leverages its HTTPS security framework, all web sites that use !DotNetOpenId are already protected against this attack where Providers properly check their HTTPS certificates and register on the CRL if necessary.
+
+= Regular security features =
+ * Full implementation of OpenID's discovery, verification, and rediscovery requirements.
+ * XRI resolution using 100% HTTPS.
+ * XRIs resolve to !CanonicalID (i-number) claimed identifiers.
+ * Nonce added both for RP and OP when interoping with OpenID 1.x sites for added security otherwise only present in !OpenID 2.0.
+ * Over 220 unit tests to verify correct behavior in optimal, suboptimal and attack scenarios.
+ * Based on .NET platform to protect against buffer overflows and many other attack vectors already protected against as part of the platform.

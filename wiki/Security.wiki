@@ -12,7 +12,7 @@ Since !DotNetOpenId is based on the .NET platform and leverages its HTTPS securi
 = Regular security features =
  * Full implementation of OpenID's discovery, verification, and rediscovery requirements.
  * XRI resolution using 100% HTTPS.
- * XRIs resolve to !CanonicalID (i-number) claimed identifiers.
+ * XRIs resolve to CanonicalID (i-number) claimed identifiers.
  * Nonce added both for RP and OP when interoping with OpenID 1.x sites for added security otherwise only present in OpenID 2.0.
  * Over 220 unit tests to verify correct behavior in optimal, suboptimal and attack scenarios.
  * Based on .NET platform to protect against buffer overflows and many other attack vectors already protected against as part of the platform.

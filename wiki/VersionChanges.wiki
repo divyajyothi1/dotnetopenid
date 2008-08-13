@@ -6,6 +6,11 @@
 Curious what's changed from version to version?  Wonder if it's worth upgrading or what breaking changes may exist?  This is the page for you.  
 Not all fixed issues are listed here, but the more noteworthy ones are.  Unless explicitly said otherwise, each version has all the enhancements of the previously listed ones.
 
+== Next Version: *enhanced security release* ==
+  * Added support for SHA384 and SHA512 for enhanced security over SHA256 (Issue 125).
+  * Added support to require some minimum SHA bit length to exclude SHA1 or higher for enhanced security (Issue 124).
+  * Added OpenIdRelyingParty.RequireSsl property to require a completely SSL secured end-to-end authentication (Issue 123).
+
 == Version 2.3.1 ==
   * Fixed RP stateless mode that broke directed identity in stateless (Issue 119).
 

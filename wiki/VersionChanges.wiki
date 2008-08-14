@@ -8,8 +8,8 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
 
 == Next Version: *enhanced security release* ==
   * Added !OpenIdRelyingParty.!RequireSsl property to require a completely SSL secured end-to-end authentication (Issue 123).
-  * Planned: Add support to require some minimum SHA bit length to exclude SHA1 or higher for enhanced security (Issue 124).
-  * Planned: Add support for SHA384 and SHA512 for enhanced security over SHA256 (Issue 125).
+  * Added support to require some minimum SHA bit length to exclude SHA1 or higher for enhanced security (Issue 124).
+  * Added support for SHA384 and SHA512 for enhanced security over SHA256 (Issue 125).
   * Planned: Add support for requiring the remote end of an OpenID authentication to implement OpenID 2.0 (Issue 127).
 
 == Version 2.3.1 ==

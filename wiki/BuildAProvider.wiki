@@ -16,7 +16,7 @@ You should consider what some of your design goals are for your Provider before 
  # Will you use ASP.NET?  Although DotNetOpenId will work for you whether you use ASP.NET as your web hosting platform or not, leveraging ASP.NET makes things a lot simpler.
  # Will you use the included ASP.NET DotNetOpenId controls?  You can implement your provider using the included ASP.NET controls or without them.  Using them still leaves a lot of flexibility to your app while making building and maintenance much easier.  
  # Will you use IIS, or some other web server?  IIS is not the only web server that hosts .NET web applications, but it is probably the easiest to configure.
- # Will you be hosting on a web farm?  You can actually start with 'no' as your answer for now and then upgrade as traffic to your Provider increases.  DotNetOpenId supports both scenarios, but if you'll be hosting on a web farm you will need to build your own state-sharing mechanism so that all servers share the OpenID state that is necessary for your users to authenticate.
+ # Will you be hosting on a web farm?  You can actually start with 'no' as your answer for now and then upgrade as traffic to your Provider increases.  DotNetOpenId supports both scenarios, but if you'll be hosting on a web farm you will need to build your own state-sharing mechanism so that all servers share the OpenID state that is necessary for your users to authenticate. See the WebFarmHowto page for details.
 
 == Scope of tutorial ==
 

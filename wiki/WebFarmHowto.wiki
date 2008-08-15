@@ -20,7 +20,7 @@ If you have a web farm, you likely have had to deal with how to make Sessions wo
 
 == 1. Familiarize yourself with the source code. ==
 
-If you haven't downloaded the source code for DotNetOpenID, now's a good time to do so. There are a couple of key classes to look at:
+If you haven't downloaded the [http://github.com/AArnott/dotnetopenid/tree/master source code for DotNetOpenID], now's a good time to do so. There are a couple of key classes to look at:
  * `Association.cs` - this is used for storing secrets and is one of the low-level types that need to be stored.
  * `Nonce.cs` - this is used for creating expiring one-time-use codes that need to be stored.
  * `IAssociationStore.cs` - this is the base interface for storing associations. You'll need to implement this interface.
@@ -28,6 +28,8 @@ If you haven't downloaded the source code for DotNetOpenID, now's a good time to
  * `INonceStore.cs` - this analogous to `IAssociationStore`, but for Nonce objects.
  * `RelyingParty/IRelyingPartyApplicationStore.cs` - this is an interface for Relying Party (Consumer) applications. If you're consuming external OpenID accounts, you'll need to implement this interface. It's just a combination of `IAssociationStore` and `INonceStore`.
  * `RelyingParty/ApplicationMemoryStore.cs` - this is the in-memory implementation of `IRelyingPartyApplicationStore` for reference. It provides an example implementation of `INonceStore` and inherits from `AssociationMemoryStore` to pick up that functionality. Again, no in-memory dictionaries allowed in your implementation.
+
+Also, take a look at the [http://github.com/AArnott/dotnetopenid/tree/master/samples/ProviderCustomStore ProviderCustomStore] and the [http://github.com/AArnott/dotnetopenid/tree/master/samples/RelyingPartyCustomStore RelyingPartyCustomStore] projects in the [http://github.com/AArnott/dotnetopenid/tree/master/samples samples] folder. The sample projects show how to store the appropriate objects into a `DataSet`, which is in memory still, but it's helpful as another example.
 
 == 2. Implement some interfaces. ==
 
@@ -37,10 +39,16 @@ If you're writing a Relying Party / consumer, you'll need to implement IRelyingP
 
 You don't have to add code to the DotNetOpenId DLL itself. The interfaces are public, so you can put the code in another DLL or in your web project itself. This makes it easier to keep your DotNetOpenId DLL up-to-date since there's less to integrate.
 
+See the sample projects' ([http://github.com/AArnott/dotnetopenid/tree/master/samples/RelyingPartyCustomStore RelyingPartyCustomStore] and [http://github.com/AArnott/dotnetopenid/tree/master/samples/ProviderCustomStore ProviderCustomStore]) CustomStore.cs files for examples.
+
 == 3. Use your interfaces. ==
 
-If you're using the convenient ASP.NET controls (`ProviderEndpoint` for providers and `OpenIdLogin` for consumers), you'll need to subclass these so that can use your newly implemented storage interfaces. 
- * `ProviderEndpoint` uses the default constructor for `OpenIdProvider` (`new OpenIdProvider();`) in the `OnLoad` method, so you'll need to override that method so you can use the other constructor that lets you pick an arbitrary `IAssociationStore`.
- * `OpenIdLogin` uses the default constructor for `OpenIdRelyingParty` (`new OpenIdRelyingParty();`) in the `CreateRequest` method, so you'll need to override that method and use other constructor for `OpenIdRelyingParty`.
+Rather than using the built-in ASP.NET controls, which use the default implementation of IAssociationStore (that is, AssociationMemoryStore), you'll need to write a little bit of custom code at this level.
 
-With those changes in place, you should be able to use your new controls. At least it should work in theory. (Still working on it now...feel free to comment below.)
+For some example code, check the samples provided:
+ * Relying Party: [http://github.com/AArnott/dotnetopenid/tree/master/samples/RelyingPartyCustomStore/login.aspx.cs login.aspx.cs] in RelyingPartyCustomStore
+ * Provider: [http://github.com/AArnott/dotnetopenid/tree/master/samples/ProviderCustomStore/Server.aspx.cs Server.aspx.cs] in ProviderCustomStore
+
+If you're interested in seeing the built-in controls support custom IAssociationStore implementations, check on [http://code.google.com/p/dotnetopenid/issues/detail?id=128 bug 128] (for the `RelyingParty`'s `OpenIdLogin`/`OpenIdTextBox` control) or [http://code.google.com/p/dotnetopenid/issues/detail?id=129 bug 129] (for the `Provider`'s `ProviderEndPoint`.)
+
+(This is a work in progress...feel free to comment below.)

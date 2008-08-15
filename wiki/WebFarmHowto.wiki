@@ -1,0 +1,46 @@
+#summary How to implement OpenID in a multiple server situation.
+#labels WebFarm
+
+= Introduction =
+
+Presently, there is no "out-of-the-box" support for using DotNetOpenID on a web farm, but by implementing a handful of interfaces, you can serialize data so that it can be shared between servers.
+
+
+= Background =
+
+DotNetOpenID, in order to properly handle both the Relying Party (Consumer) and Provider functions, needs to store some data between requests. When it's running on a single machine, that's pretty easy because it can just store the data in memory - it uses the [http://msdn.microsoft.com/en-us/library/system.web.httpapplicationstate.aspx HttpContext.Current.Application] state storage. Because it's in memory on only one machine, it can use regular `lock` statements to deal with synchronization issues.
+
+Taking this into the context of a web farm, where each server has its own `HttpContext.Current.Application` state storage, if the end user accesses server A but the external OpenID server (either a Provider or a Relying Party/Consumer) accesses server B on your web farm, server B will have no previous data. It's a little like Session data, but the catch is you have different "clients" (your end user and the other OpenID server) which don't have the same cookie, so there's no way to use the built in Session object.
+
+If you have a web farm, you likely have had to deal with how to make Sessions work with your regular web users. For example, you might use something like the ASP.NET State Server, SQL Server, or perhaps [http://www.scaleoutsoftware.com/products/stateServer/ Scaleout StateServer], to merge all your data into a single (logical) storage area. You'll need some kind of storage mechanism like that to centrally store DotNetOpenID's data too. Obviously you want something fast, but choosing a storage technology is outside the scope of this article. You'll want to be able to deal with synchronization issues (locking, etc.) with whatever storage you're using.
+
+= Implementation walkthrough =
+
+(This is presently a work in progress.)
+
+== 1. Familiarize yourself with the source code. ==
+
+If you haven't downloaded the source code for DotNetOpenID, now's a good time to do so. There are a couple of key classes to look at:
+ * `Association.cs` - this is used for storing secrets and is one of the low-level types that need to be stored.
+ * `Nonce.cs` - this is used for creating expiring one-time-use codes that need to be stored.
+ * `IAssociationStore.cs` - this is the base interface for storing associations. You'll need to implement this interface.
+ * `AssociationMemoryStore.cs` - this is an in-memory implementation of IAssociationStore. It may be helpful to reference this, though you won't be able to use a Dictionary object because that's only in memory on one machine.
+ * `INonceStore.cs` - this analogous to `IAssociationStore`, but for Nonce objects.
+ * `RelyingParty/IRelyingPartyApplicationStore.cs` - this is an interface for Relying Party (Consumer) applications. If you're consuming external OpenID accounts, you'll need to implement this interface. It's just a combination of `IAssociationStore` and `INonceStore`.
+ * `RelyingParty/ApplicationMemoryStore.cs` - this is the in-memory implementation of `IRelyingPartyApplicationStore` for reference. It provides an example implementation of `INonceStore` and inherits from `AssociationMemoryStore` to pick up that functionality. Again, no in-memory dictionaries allowed in your implementation.
+
+== 2. Implement some interfaces. ==
+
+If you're writing a Provider (allowing external sites to authenticate users on your site), you just need to implement `IAssociationStore`. (And the TKey type parameter will always be `DotNetOpenId.AssociationRelyingPartyType`, if that makes it simpler at all.)
+
+If you're writing a Relying Party / consumer, you'll need to implement IRelyingPartyApplicationStore, which in turn means you need to implement INonceStore and IAssociationStore.
+
+You don't have to add code to the DotNetOpenId DLL itself. The interfaces are public, so you can put the code in another DLL or in your web project itself. This makes it easier to keep your DotNetOpenId DLL up-to-date since there's less to integrate.
+
+== 3. Use your interfaces. ==
+
+If you're using the convenient ASP.NET controls (`ProviderEndpoint` for providers and `OpenIdLogin` for consumers), you'll need to subclass these so that can use your newly implemented storage interfaces. 
+ * `ProviderEndpoint` uses the default constructor for `OpenIdProvider` (`new OpenIdProvider();`) in the `OnLoad` method, so you'll need to override that method so you can use the other constructor that lets you pick an arbitrary `IAssociationStore`.
+ * `OpenIdLogin` uses the default constructor for `OpenIdRelyingParty` (`new OpenIdRelyingParty();`) in the `CreateRequest` method, so you'll need to override that method and use other constructor for `OpenIdRelyingParty`.
+
+With those changes in place, you should be able to use your new controls. At least it should work in theory. (Still working on it now...feel free to comment below.)

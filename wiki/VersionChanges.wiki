@@ -17,6 +17,8 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
   * Added support for ASP.NET validation controls to validate !OpenIdTextBox, !OpenIdLogin controls (Issue 121).
   * Added bool !AutoNormalizeRequest property and !NormalizeUri event to !IdentityEndpoint control (Issue 120).
   * Fixed directed identity immediate mode where setup_required is returned by !ClaimedIdentifier has the special identifier select string instead of null, and the original user-supplied identifier is unrecoverable (Issue 116).
+  * Added OpenIdTextBox.CustomApplicationStore and Stateless properties (Issue 128).
+  * Added ProviderEndpoint.CustomApplicationStore property (Issue 129).
 
 == Version 2.3.1 ==
   * Fixed RP stateless mode that broke directed identity in stateless (Issue 119).

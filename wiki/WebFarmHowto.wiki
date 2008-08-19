@@ -49,6 +49,6 @@ For some example code, check the samples provided:
  * Relying Party: [http://github.com/AArnott/dotnetopenid/tree/master/samples/RelyingPartyCustomStore/login.aspx.cs login.aspx.cs] in [http://github.com/AArnott/dotnetopenid/tree/master/samples/RelyingPartyCustomStore RelyingPartyCustomStore]
  * Provider: [http://github.com/AArnott/dotnetopenid/tree/master/samples/ProviderCustomStore/Server.aspx.cs Server.aspx.cs] in [http://github.com/AArnott/dotnetopenid/tree/master/samples/ProviderCustomStore ProviderCustomStore]
 
-`*`If you're interested in seeing the built-in controls support custom `IAssociationStore` implementations, check on [http://code.google.com/p/dotnetopenid/issues/detail?id=128 bug 128] (for the `RelyingParty`'s `OpenIdLogin`/`OpenIdTextBox` control, which has been fixed now) or [http://code.google.com/p/dotnetopenid/issues/detail?id=129 bug 129] (for the `Provider`'s `ProviderEndPoint`.)
+`*`If you're interested in seeing the built-in controls support custom `IAssociationStore` implementations, check on [http://code.google.com/p/dotnetopenid/issues/detail?id=128 bug 128] (for the `RelyingParty`'s `OpenIdLogin`/`OpenIdTextBox` control) or [http://code.google.com/p/dotnetopenid/issues/detail?id=129 bug 129] (for the `Provider`'s `ProviderEndPoint`.) Both of these bugs have been fixed and checked in, but they won't appear until DotNetOpenId v2.4.
 
 (This is a work in progress...feel free to comment below.)

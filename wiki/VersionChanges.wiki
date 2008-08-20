@@ -20,6 +20,9 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
   * Added !OpenIdTextBox.!CustomApplicationStore and Stateless properties (Issue 128).
   * Added !ProviderEndpoint.!CustomApplicationStore property (Issue 129).
 
+== Version 2.1.7, 2.2.4, 2.3.2 ==
+  * Fixes realm/return_to capitalization compatibility issue (Issue 122).
+
 == Version 2.3.1 ==
   * Fixed RP stateless mode that broke directed identity in stateless (Issue 119).
 

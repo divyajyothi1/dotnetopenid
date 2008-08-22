@@ -48,12 +48,13 @@ See the sample projects' ([http://github.com/AArnott/dotnetopenid/tree/master/sa
 Rather than using the built-in ASP.NET controls, which use the default implementation of `IAssociationStore` (that is, `AssociationMemoryStore`), you'll need to write a little bit of custom code at this level.
 
 For some example code, check the samples provided:
- * Relying Party: [http://github.com/AArnott/dotnetopenid/tree/master/samples/RelyingPartyCustomStore/login.aspx.cs login.aspx.cs] in [http://github.com/AArnott/dotnetopenid/tree/master/samples/RelyingPartyCustomStore RelyingPartyCustomStore]
- * Provider: [http://github.com/AArnott/dotnetopenid/tree/master/samples/ProviderCustomStore/Server.aspx.cs Server.aspx.cs] in [http://github.com/AArnott/dotnetopenid/tree/master/samples/ProviderCustomStore ProviderCustomStore]
+ * Relying Party: [http://github.com/AArnott/dotnetopenid/tree/v2.3/samples/RelyingPartyCustomStore/login.aspx.cs login.aspx.cs] in [http://github.com/AArnott/dotnetopenid/tree/v2.3/samples/RelyingPartyCustomStore RelyingPartyCustomStore]
+ * Provider: [http://github.com/AArnott/dotnetopenid/tree/v2.3/samples/ProviderCustomStore/Server.aspx.cs Server.aspx.cs] in [http://github.com/AArnott/dotnetopenid/tree/v2.3/samples/ProviderCustomStore ProviderCustomStore]
 
 === Beginning with DotNetOpenId v2.4 ===
 
-New code has been checked in that will allow you to use a custom `IAssociationStore` on the ASP.NET controls. See ~~[http://code.google.com/p/dotnetopenid/issues/detail?id=128 bug 128]~~ (for the `RelyingParty`'s `OpenIdLogin`/`OpenIdTextBox` control) or ~~[http://code.google.com/p/dotnetopenid/issues/detail?id=129 bug 129]~~ (for the `Provider`'s `ProviderEndPoint`.) For each control, a new `CustomApplicationStore` property has been added. When the `CustomApplicationStore` is null, the default implementation is used. Look for updated `*CustomStore` sample applications coming (likely) on the 2.4 branch.
+As of v2.4`*`, you can use your custom storage implementations on the ASP.NET controls via the `CustomApplicationStore` property.  When the `CustomApplicationStore` is null, the default implementation is used. Look for updated `*CustomStore` sample applications in the near future.
 
+`*` See ~~[http://code.google.com/p/dotnetopenid/issues/detail?id=128 bug 128]~~ (for the `RelyingParty`'s `OpenIdLogin`/`OpenIdTextBox` control) and ~~[http://code.google.com/p/dotnetopenid/issues/detail?id=129 bug 129]~~ (for the `Provider`'s `ProviderEndPoint`.)
 
 (This is a work in progress...feel free to comment below.)

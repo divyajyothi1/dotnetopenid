@@ -10,8 +10,9 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
   * Added !OpenIdAjaxTextBox: an AJAX-style text field that immediately attempts authentication once the identifier has been entered, and provides explicit "setup" style login via an unobtrusive login button where required.  Great for blog commenting and user account pages where additional identifiers can be added to an account.
 
 == Version 2.4.1 (unreleased) ==
-  * New support for configuring many aspects of !DotNetOpenId using your Web.config file instead of imperative code.  Makes customizing settings much easier, whether you're using the ASP.NET controls or doing things programmatically (Issue 131).
   * Fixed association handling with OPs that don't support SHA-256 (Issue 134).  This did not break login, but just forced RPs to use dumb mode when working with OPs that didn't support SHA-256.  The bug only repros in 2.4.0.  All versions before that were correct.
+  * New support for configuring many aspects of !DotNetOpenId using your Web.config file instead of imperative code.  Makes customizing settings much easier, whether you're using the ASP.NET controls or doing things programmatically (Issue 131).
+  * As part of web.config configuration, the RP and OP custom store samples have been removed.  The more complete RP and OP samples have been augmented with custom store options that can be activated by uncommenting a line in their web.config files.
 
 == Version 2.4.0 ==
   * Added !OpenIdRelyingParty.!RequireSsl property to require a completely SSL secured end-to-end authentication (Issue 123).

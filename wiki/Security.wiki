@@ -11,11 +11,11 @@ System.Net.ServicePointManager.CheckCertificateRevocationList = true;
 }}}
 Or add this to your Web.config file:
 {{{
-	<system.net>
-		<settings>
-			<servicePointManager checkCertificateRevocationList="true"/>
-		</settings>
-	</system.net>
+<system.net>
+	<settings>
+		<servicePointManager checkCertificateRevocationList="true"/>
+	</settings>
+</system.net>
 }}}
 This will be automatically done in !DotNetOpenId 2.4.1 and later.
 

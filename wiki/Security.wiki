@@ -5,7 +5,11 @@
 == DNS poisoning + (Debian's) weak HTTPS certificates ==
 A recent security news bulletin revealed that [http://search.live.com/results.aspx?q=weak+https+debian&sourceid=Mozilla-search&form=CHROME Debian and derivative Linux operating systems have been generating extremely weak HTTPS certificates] for years.  As a result, OpenID relying party web sites may be vulnerable to a brute force HTTPS certificate plus DNS poisoning attack to phish users passwords and/or spoof users' identities.  The mitigation for this is for the RP's OpenID implementation to check the HTTPS certificate revocation list (CRL) for added security against these weak certificates.  
 
-Since !DotNetOpenId is based on the .NET platform and leverages its HTTPS security framework, all web sites that use !DotNetOpenId are already protected against this attack where Providers properly check their HTTPS certificates and register on the CRL if necessary.
+Since !DotNetOpenId is based on the .NET platform and leverages its HTTPS security framework, all web sites that use !DotNetOpenId can protect against this attack by adding this line to the hosting web site's startup code:
+{{{
+System.Net.ServicePointManager.CheckCertificateRevocationList = true;
+}}}
+This will be automatically done in !DotNetOpenId 2.4.1 and later.
 
 = Regular security features =
  * Full implementation of OpenID's discovery, verification, and rediscovery requirements.

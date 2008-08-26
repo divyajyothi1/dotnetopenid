@@ -1,7 +1,5 @@
 #summary News and features of DotNetOpenId's security
 
-= DRAFT = 
-
 = Security News bulletins =
 
 == DNS poisoning + (Debian's) weak HTTPS certificates ==
@@ -11,6 +9,7 @@ Since !DotNetOpenId is based on the .NET platform and leverages its HTTPS securi
 
 = Regular security features =
  * Full implementation of OpenID's discovery, verification, and rediscovery requirements.
+ * HTTPS certificates are validated against CRL (certificate revocation list).
  * XRI resolution using 100% HTTPS.
  * Optional switch to require HTTPS for all discovery and authentication.
  * Optional switch to disallow the now-security-broken SHA-1 association.

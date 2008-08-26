@@ -17,7 +17,7 @@ Or add this to your Web.config file:
 	</settings>
 </system.net>
 }}}
-This will be automatically done in !DotNetOpenId 2.4.1 and later.
+This requires full trust in your web app, and will unfortunately not work in many shared host environments that give web apps only partial trust.
 
 = Regular security features =
  * Full implementation of OpenID's discovery, verification, and rediscovery requirements.

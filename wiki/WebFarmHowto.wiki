@@ -5,7 +5,7 @@
 
 Presently, there is no "out-of-the-box" support for using DotNetOpenId on a web farm, but by implementing a handful of interfaces, you can serialize data so that it can be shared between servers.
 
-In future versions, look for web.config support for dropping in an implementation DLL with no extra code required in your web app.
+As of v2.4.1, we have web.config support for dropping in an implementation DLL with no extra code required in your web app. Just specify where the implementation is using the new configuration settings (documented in the Configuration.html file that comes with the binary distribution) and specify the Assembly and class name of the implementation.
 
 = Background =
 
@@ -54,8 +54,18 @@ For some example code, check the samples provided:
 
 === Beginning with DotNetOpenId v2.4 ===
 
-As of v2.4`*`, you can use your custom storage implementations on the ASP.NET controls via the `CustomApplicationStore` property.  When the `CustomApplicationStore` is null, the default implementation is used. You can set the property in your `Page_Load` event, which occurs early enough in the [http://msdn.microsoft.com/en-us/library/ms178472.aspx ASP.NET Page Lifecycle] for the control to use the custom store correctly. Be sure to set it on every `Page_Load` as this property is not saved into the `ViewState` and will be forgotten after each request, resulting in the infamous `InvalidSignature` exception.
+As of v2.4, you can use your custom storage implementations on the ASP.NET controls via the `CustomApplicationStore` property.  When the `CustomApplicationStore` is null, the default implementation is used. You can set the property in your `Page_Load` event, which occurs early enough in the [http://msdn.microsoft.com/en-us/library/ms178472.aspx ASP.NET Page Lifecycle] for the control to use the custom store correctly. Be sure to set it on every `Page_Load` as this property is not saved into the `ViewState` and will be forgotten after each request, resulting in the infamous `InvalidSignature` exception.
 
-`*` See ~~[http://code.google.com/p/dotnetopenid/issues/detail?id=128 bug 128]~~ (for the `RelyingParty`'s `OpenIdLogin`/`OpenIdTextBox` control) and ~~[http://code.google.com/p/dotnetopenid/issues/detail?id=129 bug 129]~~ (for the `Provider`'s `ProviderEndPoint`.)
+=== Beginning with DotNetOpenId v2.4.1 ===
 
-(This is a work in progress...feel free to comment below.)
+Instead of using the `Page_Load` event to hook up your custom store, you can now specify the custom implementations in your web.config file., like this:
+{{{
+  <dotNetOpenId>
+    <relyingParty>
+      <store type="Assembly.Name, Fully.Namespace.Qualified.CustomRelyingPartyStore" />
+    </relyingParty>
+    <provider>
+      <store type="Assembly.Name, Fully.Namespace.Qualified.CustomProviderStore" />
+    </provider>
+  </dotNetOpenId>
+}}}

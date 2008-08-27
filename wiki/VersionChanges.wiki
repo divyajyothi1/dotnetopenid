@@ -16,6 +16,7 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
   * XRDS default prioritization fixed to sort by service type first, then priority value (Issue 136).
   * RP interops better with OPs that want to use Diffie-Hellman sessions even over HTTPS (Issue 141).
   * Fixed forced HTTPS use in XRI resolution when in high security profile mode (Issue 138).
+  * A few other small interop improvements.
   * As part of web.config configuration, the RP and OP custom store samples have been removed.  The more complete RP and OP samples have been augmented with custom store options that can be activated by uncommenting a line in their web.config files.
 
 == Version 2.4.0 ==

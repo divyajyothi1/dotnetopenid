@@ -58,14 +58,14 @@ As of v2.4, you can use your custom storage implementations on the ASP.NET contr
 
 === Beginning with DotNetOpenId v2.4.1 ===
 
-Instead of using the `Page_Load` event to hook up your custom store, you can now specify the custom implementations in your web.config file., like this:
+Instead of using the `Page_Load` event to hook up your custom store, you can now specify the custom implementations in your web.config file, like this:
 {{{
   <dotNetOpenId>
     <relyingParty>
-      <store type="Assembly.Name, Fully.Namespace.Qualified.CustomRelyingPartyStore" />
+      <store type="Fully.Namespace.Qualified.CustomRelyingPartyStore, Assembly.Name" />
     </relyingParty>
     <provider>
-      <store type="Assembly.Name, Fully.Namespace.Qualified.CustomProviderStore" />
+      <store type="Fully.Namespace.Qualified.CustomProviderStore, Assembly.Name" />
     </provider>
   </dotNetOpenId>
 }}}

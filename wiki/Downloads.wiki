@@ -1,0 +1,12 @@
+#summary DotNetOpenId Downloads
+
+|| v2.4.1.8239 || [http://nerdbank.org/DotNetOpenId-2.4.1.8239.zip Download] ||
+|| v2.3.2.8233 || [http://dotnetopenid.googlecode.com/files/DotNetOpenId-2.3.2.8233.zip Download] ||
+|| v2.2.4.8233 || [http://dotnetopenid.googlecode.com/files/DotNetOpenId-2.2.4.8233.zip Download] ||
+|| v2.1.7.8233 || [http://dotnetopenid.googlecode.com/files/DotNetOpenId-2.1.7.8233.zip Download] ||
+
+All downloads come complete with the ready to use !DotNetOpenId.dll library, symbols, documentation and samples.
+
+!DotNetOpenId.dll is strong-name signed.
+
+[http://code.google.com/p/dotnetopenid/downloads/list Older versions]

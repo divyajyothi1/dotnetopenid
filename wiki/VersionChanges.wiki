@@ -9,7 +9,7 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
 == Version 2.5.0 (unreleased) ==
   * Added !OpenIdAjaxTextBox: an AJAX-style text field that immediately attempts authentication once the identifier has been entered, and provides explicit "setup" style login via an unobtrusive login button where required.  Great for blog commenting and user account pages where additional identifiers can be added to an account.
 
-== Version 2.4.1 (unreleased) ==
+== Version 2.4.1 ==
   * Fixed association handling with OPs that don't support SHA-256 (Issue 134).  This did not break login, but just forced RPs to use dumb mode when working with OPs that didn't support SHA-256.  The bug only repros in 2.4.0.  All versions before that were correct.
   * New support for configuring many aspects of !DotNetOpenId using your Web.config file instead of imperative code.  Makes customizing settings much easier, whether you're using the ASP.NET controls or doing things programmatically (Issue 131).
   * CanonicalID verification now done at the XRI resolver proxy, resulting in XRI discovery happening twice as fast (Issue 137).

@@ -53,9 +53,9 @@ For some example code, check the samples provided:
 
 === Beginning with DotNetOpenId v2.4 ===
 
-As of v2.4`*`, you can use your custom storage implementations on the ASP.NET controls via the `CustomApplicationStore` property.  When the `CustomApplicationStore` is null, the default implementation is used. You can set the property in your `Page_Load` event, which occurs early enough in the [http://msdn.microsoft.com/en-us/library/ms178472.aspx ASP.NET Page Lifecycle] for the control to use the custom store correctly.
+As of v2.4`*`, you can use your custom storage implementations on the ASP.NET controls via the `CustomApplicationStore` property.  When the `CustomApplicationStore` is null, the default implementation is used. You can set the property in your `Page_Load` event, which occurs early enough in the [http://msdn.microsoft.com/en-us/library/ms178472.aspx ASP.NET Page Lifecycle] for the control to use the custom store correctly. Be sure to set it on every `Page_Load` as this property is not saved into the `ViewState` and will be forgotten after each request, resulting in the infamous `InvalidSignature` exception.
 
-In future versions, look for web.config support for dropping in an implementation with no extra code required.
+In future versions, look for web.config support for dropping in an implementation DLL with no extra code required in your web app.
 
 `*` See ~~[http://code.google.com/p/dotnetopenid/issues/detail?id=128 bug 128]~~ (for the `RelyingParty`'s `OpenIdLogin`/`OpenIdTextBox` control) and ~~[http://code.google.com/p/dotnetopenid/issues/detail?id=129 bug 129]~~ (for the `Provider`'s `ProviderEndPoint`.)
 

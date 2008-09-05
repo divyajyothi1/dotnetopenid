@@ -10,10 +10,10 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
   * Added !OpenIdAjaxTextBox: an AJAX-style text field that immediately attempts authentication once the identifier has been entered, and provides explicit "setup" style login via an unobtrusive login button where required.  Great for blog commenting and user account pages where additional identifiers can be added to an account.
 
 == Version 2.4.2 ==
-  * Fixed RelyingPartyMvc sample so its assembly references to MVC are correct (Issue 145).
-  * Fixed unhandled NullReferenceException on failed, immediate, directed identity authentication requests.
+  * Fixed !RelyingPartyMvc sample so its assembly references to MVC are correct (Issue 145).
+  * Fixed unhandled !NullReferenceException on failed, immediate, directed identity authentication requests.
   * Fixed redirect handling when Location header is a relative URL.
-  * IAuthenticationResponse.FriendlyIdentifierForDisplay now returns just the i-name when the user provided an i-name, instead of "i-number (i-name)".
+  * IAuthenticationResponse.!FriendlyIdentifierForDisplay now returns just the i-name when the user provided an i-name, instead of "i-number (i-name)".
   * Added sample provider .ashx handler.
 
 == Version 2.4.1 ==

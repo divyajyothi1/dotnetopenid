@@ -7,7 +7,7 @@ Curious what's changed from version to version?  Wonder if it's worth upgrading 
 Not all fixed issues are listed here, but the more noteworthy ones are.  Unless explicitly said otherwise, each version has all the enhancements of the previously listed ones.
 
 == Version 2.5.0 (in beta) ==
-  * Added !OpenIdAjaxTextBox: an AJAX-style text field that immediately attempts authentication once the identifier has been entered, and provides explicit "setup" style login via an unobtrusive login button where required.  Great for blog commenting and user account pages where additional identifiers can be added to an account.
+  * Added !OpenIdAjaxTextBox: an AJAX-style login control that immediately attempts authentication once the identifier has been entered, and provides explicit "setup" style login via an unobtrusive login button where required.  Supports OpenID extensions both in JavaScript and on the server so forms can be prefilled.  Great for blog commenting and user account pages where additional identifiers can be added to an account.  See the [http://nerdbank.org/rp.exp/ajaxlogin.aspx live demo].
 
 == Version 2.4.2 ==
   * Fixed !RelyingPartyMvc sample so its assembly references to MVC are correct (Issue 145).

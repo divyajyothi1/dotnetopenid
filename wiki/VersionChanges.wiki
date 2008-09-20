@@ -9,6 +9,12 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
 == Version 2.5.0 (in beta) ==
   * Added !OpenIdAjaxTextBox: an AJAX-style login control that immediately attempts authentication once the identifier has been entered, and provides explicit "setup" style login via an unobtrusive login button where required.  Supports OpenID extensions both in JavaScript and on the server so forms can be prefilled.  Great for blog commenting and user account pages where additional identifiers can be added to an account.  See the [http://nerdbank.org/rp.exp/ajaxlogin.aspx live demo].
 
+== Version 2.4.3 ==
+  * Fixed bug introduced in 2.4.1 (or 2.4.0?) where RP would reject association responses from 1.0 OPs that omitted the session_type parameter (Issue 148).
+  * !IdentityEndpointNormalizationEventArgs.!UserSuppliedIdentifier is now settable by the host web site for highly customized url rewriting scenarios.
+  * Lots more Identifier discovery logging.
+  * Better logging of nonce failures.
+
 == Version 2.4.2 ==
   * Fixed !RelyingPartyMvc sample so its assembly references to MVC are correct (Issue 145).
   * Fixed unhandled !NullReferenceException on failed, immediate, directed identity authentication requests.

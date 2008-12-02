@@ -1,0 +1,21 @@
+#summary Describes how a (potential) user of DotNetOpenId can ask a question
+#labels Phase-Support,Featured
+
+Whether you're just starting out with !DotNetOpenId, or you're a regular user but want to get a more advanced scenario working, we're interested in hearing your questions and feedback so we can help you and make the library better.  
+
+= Email = 
+
+You can join the [http://groups.google.com/group/dotnetopenid dotnetopenid mailing list] and post a message to that group.  We _typically_ respond within a day, and sometimes many times a day.  (But no guarantees -- this is all free after all).  But be sure to read the Professional Courtesy section below.
+
+= Bugs =
+
+If you think you found a bug but are not sure, feel free to email the mailing list first to describe your issue and see if there's something you're missing.  But if you're pretty sure it's a bug, feel free to [http://code.google.com/p/dotnetopenid/issues/list file an Issue] right away.  We don't let those issues sink to nowhere.  We typically respond very quickly.
+
+= Professional Courtesy =
+
+Please show respect for those who dedicate their time to writing, maintaining, or just learning this library by abiding by the following rules in emails you send and bugs you file:
+
+ # Run *spell check*.  No l33t sp33k.
+ # End your email by signing *your name*.  Just a simple "-- !FirstName !LastName" will do, although we love to know the company you're affiliated with where applicable and revealable.  Signing with an anonymous "-- me" is not OK.  If you are concerned about giving out your name, at least give us a first name, please.
+
+Failure to abide by these simple rules may tick off those who might otherwise be able to answer your questions. :)

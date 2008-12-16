@@ -8,7 +8,7 @@ Whether you're just starting out with !DotNetOpenId, or you're a regular user bu
 You can join the [http://groups.google.com/group/dotnetopenid dotnetopenid mailing list] and post a message to that group.  We _typically_ respond within a day, and sometimes many times a day.  (But no guarantees -- this is all free after all).  But be sure to read the Professional Courtesy section below.
 
 When emailing with questions/issues, please include as much of the following information that applies.  It can help us help you faster:
-  # DotNetOpenId version you're using (describe any changes you've made if it's not an official version)
+  # !DotNetOpenId version you're using (describe any changes you've made if it's not an official version)
   # Can you repro the issue with the included samples?
   # Include logs if at all possible.  This really helps us knock out the problem fast.
 

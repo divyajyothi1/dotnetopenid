@@ -6,6 +6,15 @@
 Curious what's changed from version to version?  Wonder if it's worth upgrading or what breaking changes may exist?  This is the page for you.  
 Not all fixed issues are listed here, but the more noteworthy ones are.  Unless explicitly said otherwise, each version has all the enhancements of the previously listed ones.
 
+== Version 2.5.2 ==
+  * RP: Fix to put up with AOL's incorrect decoding of our return_to URL, which causes a corruption in the base64 encoded token.
+  * RP: Better trimming of user supplied identifiers
+  * RP: XRDS documents are now discovered using Accept-Type HTTP header in more scenarios, fixing discovery on some OpenIDs. (Issue 182)
+  * RP: Added User-Agent HTTP header to discovery requests so that Technorati OpenIDs are discoverable. (Issue 181)
+  * RP: Fixed a corner case where some redirects that were just barely over the 2KB limit would still use 301 Redirect instead of FORM submit, causing some authentications to fail. (Issue 170)
+  * RP: Updated MVC sample to work with ASP.NET MVC beta 1.
+  * OP: Locked down Provider's IAuthenticationRequest.!ClaimedIdentifier to prevent the host changing it in delegated URL scenarios.
+
 == Version 2.5.1 ==
   * Fixes RP to tolerate an OP that unexpectedly changes the Claimed Identifier during authentication (Issue 162).  This gets !DotNetOpenId working better with Windows Live OpenID and Yahoo! providers.
   * Modified samples' web.config file to support international domain names in OpenID Identifiers.

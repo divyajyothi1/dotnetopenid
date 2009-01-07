@@ -3,7 +3,7 @@
 
 = Introduction =
 
-Presently, there is no "out-of-the-box" support for using DotNetOpenId on a web farm, but by implementing a handful of interfaces, you can serialize data so that it can be shared between servers.
+Presently, there is no "out-of-the-box" support for using !DotNetOpenId on a web farm or garden, but by implementing a handful of interfaces, you can serialize data so that it can be shared between servers.
 
 As of v2.4.1, we have web.config support for dropping in an implementation DLL with no extra code required in your web app. Just specify where the implementation is using the new configuration settings (documented in the Configuration.html file that comes with the binary distribution) and specify the Assembly and class name of the implementation.
 

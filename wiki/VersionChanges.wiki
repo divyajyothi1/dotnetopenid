@@ -15,7 +15,7 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
   * OP: Ability to customize the lifetimes of each shared association type for added security.
   * Over 400 unit tests (150+ more than previous version).
   * The public API, while extremely similar, has changed its namespace.  Hosting sites will need to accommodate to the changes!
-  * Beta 1 is only available from our [https://www.ohloh.net/p/dotnetopenid/packages Ohloh project site].
+  * Beta 1 is only available from our [https://www.ohloh.net/p/dotnetopenid/download Ohloh project site].
 
 == Version 2.5.2 ==
   * RP: Fix to put up with AOL's incorrect decoding of our return_to URL, which causes a corruption in the base64 encoded token.

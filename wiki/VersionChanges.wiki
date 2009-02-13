@@ -17,6 +17,9 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
   * The public API, while extremely similar, has changed its namespace.  Hosting sites will need to accommodate to the changes!
   * Beta 1 is only available from our [https://www.ohloh.net/p/dotnetopenid/download Ohloh project site].
 
+== Version 2.5.3 ==
+  * RP: HTML discovery now notices both OpenID 1.x and 2.0 endpoints at once (instead of just one, whichever is best).  This helps users log in with Identifiers that incorrectly advertise their Provider as supporting 1.x and 2.0 even when they only support 1.x (Issue 180).
+
 == Version 2.5.2 ==
   * RP: Fix to put up with AOL's incorrect decoding of our return_to URL, which causes a corruption in the base64 encoded token.
   * RP: Better trimming of user supplied identifiers

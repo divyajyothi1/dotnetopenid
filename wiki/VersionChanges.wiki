@@ -6,6 +6,17 @@
 Curious what's changed from version to version?  Wonder if it's worth upgrading or what breaking changes may exist?  This is the page for you.  
 Not all fixed issues are listed here, but the more noteworthy ones are.  Unless explicitly said otherwise, each version has all the enhancements of the previously listed ones.
 
+== Version 3.0.0 Beta 2 ==
+  * RP+OP: fixed hangs, login failures against some HTTP servers (Issue 205).
+  * RP+OP: discovery results cached for faster repeat logins (Issue 198).
+  * RP+OP: Fixed missing feature for non-ASP.NET web site support (Issue 209).
+  * RP: classic ASP support fixed (Issue 213).
+  * RP: classic ASP now has support for the Simple Registration extension (Issue 212).
+  * RP: All callback arguments on return_to URL are now signed to protect against tampering (Issue 147).
+  * RP: More reliable logins due to nonce checking that is per-provider endpoint instead of global (Issue 175).
+  * RP: Added support for using ASP.NET State Server and other serialization-based session stores (Issue 185).
+  * OP: Even OpenID 1.x RPs are now protected from replay attacks on positive assertions (Issue 176).
+
 == Version 3.0.0 Beta 1 ==
   * *OAuth support*!  Both for Service Provider and Consumer roles.
   * RP+OP: Exceptions are now much more predictable: the host need only catch !ProtocolException to handle all unexpected error cases.

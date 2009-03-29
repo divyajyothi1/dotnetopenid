@@ -6,6 +6,14 @@
 Curious what's changed from version to version?  Wonder if it's worth upgrading or what breaking changes may exist?  This is the page for you.  
 Not all fixed issues are listed here, but the more noteworthy ones are.  Unless explicitly said otherwise, each version has all the enhancements of the previously listed ones.
 
+== Version 3.0.0 RC 1 ==
+  * RP: *NEW* InfoCard Selector ASP.NET control
+  * RP: More efficient reuse of allocated objects by ASP.NET controls.
+  * RP: Certificate Revocation List check is now on by default in samples.
+  * OP: New ASP.NET MVC OpenID Provider sample.
+  * RP+OP: Fixed interop with some remote servers that omit certain common HTTP headers.
+  * All around: final refactoring to give v3.0 a clean and consistent feel, including some breaking changes to the public API.
+
 == Version 3.0.0 Beta 2 ==
   * RP+OP: fixed hangs, login failures against some HTTP servers (Issue 205).
   * RP+OP: discovery results cached for faster repeat logins (Issue 198).

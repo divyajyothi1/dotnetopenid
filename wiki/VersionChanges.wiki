@@ -7,7 +7,7 @@ Curious what's changed from version to version?  Wonder if it's worth upgrading 
 Not all fixed issues are listed here, but the more noteworthy ones are.  Unless explicitly said otherwise, each version has all the enhancements of the previously listed ones.
 
 == Version 3.0.0 RC 1 ==
-  * RP: *NEW* InfoCard Selector ASP.NET control
+  * RP: *NEW* !InfoCard Selector ASP.NET control
   * RP: More efficient reuse of allocated objects by ASP.NET controls.
   * RP: Certificate Revocation List check is now on by default in samples.
   * OP: New ASP.NET MVC OpenID Provider sample.

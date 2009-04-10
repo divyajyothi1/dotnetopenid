@@ -31,6 +31,7 @@ Not all fixed issues are listed here, but the more noteworthy ones are.  Unless 
   * RP+OP: OpenID extensions without simultaneous authentication.
   * RP: Signed callback arguments so relying parties can be confident their data was not tampered with during authentication.
   * RP: Smaller authentication request messages (shorter URLs).
+  * RP: OpenIdAjaxTextBox now batches authentication attempts to several OPs specified in the user's XRDS document at once in search of one that will authenticate without further user interaction.
   * OP: Ability to customize the lifetimes of each shared association type for added security.
   * Over 400 unit tests (150+ more than previous version).
   * The public API, while extremely similar, has changed its namespace.  Hosting sites will need to accommodate to the changes!

@@ -1,5 +1,5 @@
 #summary Issues
 
-Issues with DotNetOpenId and DotNetOpenAuth have moved off this site.
+Issues with !DotNetOpenId and !DotNetOpenAuth have moved off this site.
 
 [http://dotnetopenauth.net:8000/report/1 View and file new issues for this project on Trac]

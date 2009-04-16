@@ -2,4 +2,4 @@
 
 [https://www.ohloh.net/p/dotnetopenauth/download Get DotNetOpenAuth 3.0] from Ohloh.net.
 
-[http://code.google.com/p/dotnetopenid/downloads/list Download older versions of DotNetOpenId]
+[http://code.google.com/p/dotnetopenid/downloads/list Download older versions of DotNetOpenId] from here on Google Code.

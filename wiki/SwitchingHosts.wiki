@@ -39,5 +39,4 @@ Advantages of each system are listed below.  Add more if we left any out.
     # Any developer can have any number of branches in his personal Git repository without affecting the rest of the contributors.
     # Freedom to switch between branches at will without having to either checkout the whole tree of branches and tags or having to be online to switch branches.
     # Bisect feature that allows automated discovery of when bugs were introduced.
-  * Misc
-    # Downside: No hosting providers integrate Git repos with issue tracking, so we'd wan to pair up Git use with !CodePlex, Google Code, or some other project hosting site.
+    # [http://github.com/blog/411-github-issue-tracker GitHub even offers issue tracking] that couples with revision control.  (thanks, Martin)

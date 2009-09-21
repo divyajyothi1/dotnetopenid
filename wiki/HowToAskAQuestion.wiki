@@ -24,3 +24,5 @@ Please show respect for those who dedicate their time to writing, maintaining, o
  # End your email by signing *your name*.  Just a simple "-- !FirstName !LastName" will do, although we love to know the company you're affiliated with where applicable and revealable.  Signing with an anonymous "-- me" is not OK.  If you are concerned about giving out your name, at least give us a first name, please.
 
 Failure to abide by these simple rules may tick off those who might otherwise be able to answer your questions. :)
+
+*Do not* leave comments on this page to ask questions about the library.  Use one of the mechanisms listed above.

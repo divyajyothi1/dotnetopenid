@@ -1,3 +1,0 @@
-#summary A list of people who are using DotNetOpenId
-
-If you're using DotNetOpenId on your site, or plan to and are under development, please add a comment to this page giving us a link to your site, and perhaps a little about yourself or your company.

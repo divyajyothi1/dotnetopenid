@@ -1,5 +1,0 @@
-#summary Describes how to build OpenID login capability into your web site
-
-TODO
-
-(until we get a good tutorial here, please refer to the sample relying parties included in every download).

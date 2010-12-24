@@ -1,5 +1,0 @@
-#summary OpenId experts.
-
-= Introduction =
-
-The relationship between OpenId and JanRain is shrouded in mystery, but JanRain is certainly the frontrunners pushing and evangelizing the concept, architecture and mission. JanRain runs the site http://www.openidenabled.com which is the defacto site for finding out about all things OpenId.

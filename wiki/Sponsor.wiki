@@ -1,8 +1,0 @@
-#summary Donate for the love of the library, or sponsor future work
-#labels Featured
-
-While this is a free and open source project, if you like what you see here please consider donating to those who put many hours of work into building this library.
-
-*[https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=andrewarnott%40gmail%2ecom&item_name=JMPInline%20blog%20and%20open%20source%20projects&no_shipping=1&no_note=1&tax=0&currency_code=USD&bn=PP%2dDonationsBF&charset=UTF%2d8 Donate or sponsor a new feature]*.  Money contributed by this means is directed to Andrew Arnott, who has been the primary developer of the last several versions of the library. 
-
-If you are or have been a contributor to the library and would like a link added here, feel free to edit the wiki.

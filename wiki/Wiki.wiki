@@ -1,5 +1,0 @@
-#summary Wiki has moved.
-
-[http://dotnetopenauth.net:8000/wiki Our Wiki has been moved to Trac].
-
-Or [http://code.google.com/p/dotnetopenid/w/list look at our old wiki here on Google].
